@@ -10,7 +10,7 @@
   color: #61dafb;
 }
 
-.app-header {
+.app-header-xl {
   margin-top: var(--font-size-xl);
   margin-bottom: var(--font-size-xl);
   font-size: var(--font-size-xl);
@@ -18,7 +18,32 @@
   color: var(--orange);
 }
 
+.app-header-m {
+  margin-top: var(--font-size-xl);
+  margin-bottom: var(--font-size-xl);
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.app-clickable {
+  cursor: pointer;
+}
+
 .grid-layout {
   display: flex;  
   flex-wrap: wrap;
 }
+
+.app-border-selected {
+  border: solid 2px var(--orange);
+}
+
+.app-no-border {
+  border: none;
+}
+
+.margin-xs {
+  margin: var(--size-xs);
+}
+

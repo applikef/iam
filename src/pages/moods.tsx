@@ -10,7 +10,7 @@ export const Moods = () => {
 
   const [selectedList, setSelectedList] = useState<Array<string>>([])
 
-  var moods = CatalogUtil.getMoods(GENDER.F)
+  var moods = CatalogUtil.getMoods(GENDER.F);
 
   function updateMoodSelection(moodId: string) {
     if (selectedList.includes(moodId)) {
@@ -24,7 +24,7 @@ export const Moods = () => {
 
   return (
     <>
-      <div className="app-header">
+      <div className="app-header-xl">
         איך אני מרגישה?
       </div>
 
@@ -32,7 +32,12 @@ export const Moods = () => {
       {
         moods.map((mood) => {
           return (
-            <span key={mood.id} onClick={ () => { updateMoodSelection(mood.id) }}>
+            <span id={"card-"+mood.id} key={mood.id} 
+              onClick={ () => { updateMoodSelection(mood.id) }}
+              className={ selectedList.includes(mood.id) ?
+                "margin-xs app-border-selected"
+              :
+                "margin-xs app-no-border"}>
             <Card key={mood.id}
                 content={ mood.title } 
                 media={ mood.image }
@@ -44,9 +49,11 @@ export const Moods = () => {
       }
       </div>
 
-      <div>
+      <div className="app-clickable">
         { selectedList.length > 0 &&
-          <div>בואי נחשוב ביחד מה יכול לעזור לך?</div>
+          <Link to="/" className="app-header-m">
+            <div>תקליקי כאן כדי שנחשוב ביחד מה יכול לעזור לך?</div>
+          </Link>          
         }
       </div>
     </>
