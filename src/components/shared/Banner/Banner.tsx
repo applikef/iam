@@ -8,13 +8,11 @@ export const Banner = () => {
     <>
         <div>
           <div className="banner-icon-bar">
-            <div className="banner-left-icon-bar">
               <Link to={HOME_PAGE_PATH}>
                 <img src={ IMAGE_BASE_URL+"resources/icons/home128.png" }
                   className="banner-icon" 
                   title="עמוד הבית"  alt="עמוד הבית" />
               </Link>
-            </div>
           </div>
           <hr className="banner-hr"/>
         </div>
