@@ -3,5 +3,6 @@ export const enum GENDER {
   M = "male"
 };
 
-export const DefaultImageHeight = 128
-export const BaseURL = "iam/"
+export const DEFAULT_IMAGE_HEIGHT = 128
+export const IMAGE_BASE_URL = "/iam/"
+export const HOME_PAGE_PATH = "/"

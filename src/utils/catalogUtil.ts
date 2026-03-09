@@ -1,6 +1,6 @@
 import { ImageCatalogEntryType, ImageCatalogType, MoodListType } from "../model/catalogTypes";
 import { MoodDescriptor } from "../model/globalTypes";
-import { BaseURL, GENDER } from "./constantsUtil";
+import { IMAGE_BASE_URL, GENDER } from "./constantsUtil";
 import { ObjectsUtil } from "./ObjectsUtil";
 
 export class CatalogUtil {
@@ -22,16 +22,16 @@ export class CatalogUtil {
   }
 
   public static getEmptyImage(): string {
-     return BaseURL + CatalogUtil.imageCatalog.emptyImageUrl;
+     return IMAGE_BASE_URL + CatalogUtil.imageCatalog.emptyImageUrl;
   }
 
   public static getCatalogImage(imageId: string): string {
     for (let i=0; i < CatalogUtil.catalogImages.length; i++) {
       if (CatalogUtil.catalogImages[i].id === imageId) {
-        return BaseURL + CatalogUtil.catalogImages[i].url;
+        return IMAGE_BASE_URL + CatalogUtil.catalogImages[i].url;
       }    
     }
-    return BaseURL + CatalogUtil.imageCatalog.emptyImageUrl;
+    return IMAGE_BASE_URL + CatalogUtil.imageCatalog.emptyImageUrl;
   }
 
   public static getRandomCatalogImages(count: number, isUnique?: boolean): Array<ImageCatalogEntryType> {
