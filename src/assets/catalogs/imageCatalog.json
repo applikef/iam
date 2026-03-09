@@ -1,0 +1,18 @@
+{
+  "emptyImageUrl": "resources/imageCatalog/empty-image.png",
+  "images": [
+    {
+      "id": "sad-female",
+      "url": "resources/imageCatalog/sad-female.jpeg",
+      "title": ""
+    },
+    {
+      "id": "sad-male",
+      "url": "resources/imageCatalog/sad-child.jpg",
+      "title": "",
+      "type": "PICTURE",
+      "metadata": {
+      }
+    }
+  ]
+}

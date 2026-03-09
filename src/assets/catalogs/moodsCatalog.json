@@ -1,0 +1,78 @@
+{
+  "moods": [
+    {
+      "id": "angry",
+      "title": {
+        "female": "כועסת",
+        "male": "כועס"
+      }
+    },
+    {
+      "id": "calm",
+      "title": {
+        "female": "רגועה",
+        "male": "רגוע"
+      }
+    },
+    {
+      "id": "confused",
+      "title": {
+        "female": "מבולבלת",
+        "male": "מבולבל"
+      }
+    },
+    {
+      "id": "happy",
+      "title": {
+        "female": "שמחה",
+        "male": "שמח"
+      }
+    },
+    {
+      "id": "nervous",
+      "title": {
+        "female": "עצבנית",
+        "male": "עצבני"
+      }
+    },
+    {
+      "id": "protected",
+      "title": {
+        "female": "מוגנת",
+        "male": "מוגן"
+      }
+    },
+    {
+      "id": "sad",
+      "title": {
+        "female": "עצובה",
+        "male": "עצוב"
+      },
+      "image": {
+        "female": "sad-female",
+        "male": "sad-child"
+      }
+    },
+    {
+      "id": "satisfied",
+      "title": {
+        "female": "מרוצה",
+        "male": "מרוצה"
+      }
+    },
+    {
+      "id": "scared",
+      "title": {
+        "female": "פוחדת",
+        "male": "פוחד"
+      }
+    },
+    {
+      "id": "worried",
+      "title": {
+        "female": "דואגת",
+        "male": "דואג"
+      }
+    }
+  ]
+}

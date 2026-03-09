@@ -1,0 +1,24 @@
+@import './colors.css';
+@import './sizes.css';
+
+.app {
+  text-align: center;
+  direction: rtl;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+.app-header {
+  margin-top: var(--font-size-xl);
+  margin-bottom: var(--font-size-xl);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  color: var(--orange);
+}
+
+.grid-layout {
+  display: flex;  
+  flex-wrap: wrap;
+}

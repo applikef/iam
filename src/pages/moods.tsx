@@ -1,0 +1,54 @@
+import { Link } from "react-router-dom";
+import { Card } from "../components/shared/Card/Card";
+import { CatalogUtil } from "../utils/catalogUtil";
+import { DefaultImageHeight, GENDER } from "../utils/constantsUtil";
+import "./../assets/styles/global.css";
+import { useState } from "react";
+
+export const Moods = () => {
+  // const navigate = useNavigate();
+
+  const [selectedList, setSelectedList] = useState<Array<string>>([])
+
+  var moods = CatalogUtil.getMoods(GENDER.F)
+
+  function updateMoodSelection(moodId: string) {
+    if (selectedList.includes(moodId)) {
+      const newList = selectedList.filter((item) => item !== moodId);
+      setSelectedList([...newList])
+    }
+    else {
+      setSelectedList([...selectedList, moodId])
+    } 
+  }
+
+  return (
+    <>
+      <div className="app-header">
+        איך אני מרגישה?
+      </div>
+
+      <div className="grid-layout">
+      {
+        moods.map((mood) => {
+          return (
+            <span key={mood.id} onClick={ () => { updateMoodSelection(mood.id) }}>
+            <Card key={mood.id}
+                content={ mood.title } 
+                media={ mood.image }
+                height={ DefaultImageHeight }
+            />
+            </span>
+          )
+        })
+      }
+      </div>
+
+      <div>
+        { selectedList.length > 0 &&
+          <div>בואי נחשוב ביחד מה יכול לעזור לך?</div>
+        }
+      </div>
+    </>
+  )
+} 

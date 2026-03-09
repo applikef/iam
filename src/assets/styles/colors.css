@@ -1,0 +1,52 @@
+:root {
+  --light-blue-00: #deebf7;
+  --blue-00: #d0d1e6;
+  --blue-01: #6bafd6;
+  --blue-02: #3182bd;
+  --blue-03: #08519c;
+
+  --green-00: #edf8e9;
+  --green-01: #bae4b3;
+  --green-02: #74c476;
+  --green-03: #31a354;
+  --green-04: #006d2c;
+
+  --gray-01: #f0f0f0;
+  --gray-02: #DEDEDE;
+  --gray-03: #cccccc;
+  --gray-05: #9B9B9B;
+
+  --yellow-00: #ffffb2;
+  --yellow-01: #fed976;
+
+  --red-00: #fee5d9;
+  --red-01: #fcbba1;
+  --red-02: #fc9272;  
+  --red-03: #e6550d;  
+  --red-04: #a63603;
+
+  --orange: rgb(255, 132, 0);
+  
+  --white-01: #fff;
+  --white-02: #faf5f0;
+  --white-03: #faebd7;
+  --white-04: #ffe7cf;
+
+  --pink-01: #fbb4b9;
+  --pink-02: #f768a1;
+  --pink-03: #dd1c77;
+  --pink-04: #980043;
+
+  --background: var(--gray-01);
+  --text: var(--blue-03);
+  --link: var(--blue-03);
+  --clickable: var(--blue-01);
+  --highlight: var(--red-02);
+  --highlight-background: var(--red-00);
+
+  --item-background-color: var(--light-blue-00);
+  
+  --notification-info: var(--blue-00);
+  --notification-warning: var(--yellow-01);
+  --notification-error: var(--red-01);
+}
