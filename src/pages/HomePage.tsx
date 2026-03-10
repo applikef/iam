@@ -2,20 +2,27 @@ import { useContext } from "react";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import "./../assets/styles/global.css";
 import { Link } from "react-router-dom";
+import { IMAGE_BASE_URL } from "../utils/constantsUtil";
+import { ObjectsUtil } from "../utils/ObjectsUtil";
+import { CatalogUtil } from "../utils/catalogUtil";
 
 export const HomePage = () => {
+  // const navigate = useNavigate();
   const { 
     name,
     setName,
     gender
   } = useContext(AppContext) as AppContextType;
-  // const navigate = useNavigate();
+
+  const friendImageUrl = CatalogUtil.getCatalogImage("app-friend");
 
   return (
     <>
       <div className="app-page">  
         <div className="app-header-xl">
-          <div>שלום {name}</div>
+          <div className="margin-xl">שלום {name === undefined ? "חברה" : name }</div>
+          <img src={friendImageUrl} alt="App friend" height="256px" />
+          <div>מעכשיו אני איתך</div>
           <Link to="/moods" className="app-header-m">
               <div>הקליקי כאן כדי להמשיך</div>
           </Link> 

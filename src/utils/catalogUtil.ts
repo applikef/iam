@@ -1,6 +1,6 @@
 import { ImageCatalogEntryType, ImageCatalogType, MoodListType } from "../model/catalogTypes";
 import { MoodDescriptor } from "../model/globalTypes";
-import { IMAGE_BASE_URL, GENDER } from "./constantsUtil";
+import { IMAGE_BASE_URL, GENDER, POLARITY } from "./constantsUtil";
 import { ObjectsUtil } from "./ObjectsUtil";
 
 export class CatalogUtil {
@@ -57,6 +57,7 @@ export class CatalogUtil {
       moodDescriptorList.push ({
           id: mood.id,
           title: mood.title[gender],
+          polarity: mood.polarity,
           image: mood.image !== undefined ? 
             CatalogUtil.getCatalogImage(mood.image[gender]) 
           : CatalogUtil.getEmptyImage()
@@ -64,5 +65,22 @@ export class CatalogUtil {
       )
     });
     return moodDescriptorList;
+  }
+
+  public static getMoodDescriptor(id: string, gender: GENDER): MoodDescriptor | undefined {
+    const moods = CatalogUtil.moodList.moods;
+    for (var i=0; i < moods.length; i++) {
+      const mood = moods[i];
+      if (mood.id === id) {
+        return {
+          id: mood.id,
+          title: mood.title[gender],
+          polarity: mood.polarity,
+          image: mood.image !== undefined ? 
+            CatalogUtil.getCatalogImage(mood.image[gender]) 
+          : CatalogUtil.getEmptyImage()
+        }
+      }
+    };
   }
 }

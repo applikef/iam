@@ -2,6 +2,61 @@
   "emptyImageUrl": "resources/imageCatalog/empty-image.png",
   "images": [
     {
+      "id": "angry-boy",
+      "url": "resources/imageCatalog/angry-boy.jpeg",
+      "title": ""
+    },
+    {
+      "id": "angry-girl",
+      "url": "resources/imageCatalog/angry-girl.jpeg",
+      "title": ""
+    },
+    {
+      "id": "calm-boy",
+      "url": "resources/imageCatalog/kid-in-field.jpg",
+      "title": ""
+    },
+    {
+      "id": "calm-girl",
+      "url": "resources/imageCatalog/girl-on-grass.jpg",
+      "title": ""
+    },
+    {
+      "id": "desperate-girl",
+      "url": "resources/imageCatalog/desperate-girl.jpeg",
+      "title": ""
+    },
+    {
+      "id": "app-friend",
+      "url": "resources/imageCatalog/ducky-duck.png",
+      "title": ""
+    },
+    {
+      "id": "confused-girl",
+      "url": "resources/imageCatalog/confused-girl.png",
+      "title": ""
+    },
+    {
+      "id": "happy-girl",
+      "url": "resources/imageCatalog/happy-girl.jpg",
+      "title": ""
+    },
+    {
+      "id": "happy-girl-01",
+      "url": "resources/imageCatalog/happy02.jpg",
+      "title": ""
+    },
+    {
+      "id": "nervous-girl",
+      "url": "resources/imageCatalog/nervous-girl.png",
+      "title": ""
+    },
+    {
+      "id": "protected-girl",
+      "url": "resources/imageCatalog/protected-girl.png",
+      "title": ""
+    },
+    {
       "id": "sad-female",
       "url": "resources/imageCatalog/sad-female.jpeg",
       "title": ""
@@ -13,6 +68,21 @@
       "type": "PICTURE",
       "metadata": {
       }
+    },
+    {
+      "id": "satisfied-girl",
+      "url": "resources/imageCatalog/satisfied-girl.png",
+      "title": ""
+    },
+    {
+      "id": "scared-girl",
+      "url": "resources/imageCatalog/scared-girl.png",
+      "title": ""
+    },
+    {
+      "id": "worried-girl",
+      "url": "resources/imageCatalog/worried-girl.png",
+      "title": ""
     }
   ]
 }

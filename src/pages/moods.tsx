@@ -3,24 +3,43 @@ import { Card } from "../components/shared/Card/Card";
 import { CatalogUtil } from "../utils/catalogUtil";
 import { DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
+import AppContext, { AppContextType } from "../context/AppContextProvider";
+import { MoodDescriptor } from "../model/globalTypes";
 
 export const Moods = () => {
   // const navigate = useNavigate();
 
+    const { 
+    name,
+    gender,
+    setSelectedMoodList
+  } = useContext(AppContext) as AppContextType;
+
   const [selectedList, setSelectedList] = useState<Array<string>>([])
 
   var moods = CatalogUtil.getMoods(GENDER.F);
-
+  
   function updateMoodSelection(moodId: string) {
+    var newList: Array<string>;
     if (selectedList.includes(moodId)) {
-      const newList = selectedList.filter((item) => item !== moodId);
+      newList = selectedList.filter((item) => item !== moodId);
       setSelectedList([...newList])
     }
     else {
-      setSelectedList([...selectedList, moodId])
-    } 
+      newList = [...selectedList, moodId];
+      setSelectedList([...newList]);
+    }
+    
+    var descriptorList: Array<MoodDescriptor> = [];
+    newList.forEach((item: string) => {
+      const d: MoodDescriptor | undefined = CatalogUtil.getMoodDescriptor(item, gender);
+      if (d !== undefined) {
+        descriptorList.push(d)
+      }
+    })
+    setSelectedMoodList(descriptorList);
   }
 
   return (
@@ -29,6 +48,15 @@ export const Moods = () => {
         <Banner />
         <div className="app-header-xl">
           הקליקי על איך שאת מרגישה?
+        </div>
+        <div className="app-clickable margin-bottom-xl">
+          { selectedList.length > 0 &&
+            <Link to="/explore" className="app-header-m">
+              <div>
+                הקליקי כאן כדי שנחשוב ביחד מה יכול לעזור לך?
+              </div>
+            </Link>
+          }
         </div>
 
         <div className="grid-layout">
@@ -50,14 +78,6 @@ export const Moods = () => {
             )
           })
         }
-        </div>
-
-        <div className="app-clickable">
-          { selectedList.length > 0 &&
-            <Link to="/explore" className="app-header-m">
-              <div>הקליקי כאן כדי שנחשוב ביחד מה יכול לעזור לך?</div>
-            </Link>          
-          }
         </div>
       </div>
     </>

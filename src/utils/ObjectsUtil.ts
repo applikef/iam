@@ -1,3 +1,5 @@
+import { IMAGE_BASE_URL } from "./constantsUtil";
+
 export class ObjectsUtil {
   public static isNotSet = (object: any): boolean => {
     return object === undefined || 
@@ -160,5 +162,9 @@ export class ObjectsUtil {
       count++;
     }
     return colors;
+  }
+
+  public static getImageUrl(relativeUrl: string) {
+    return IMAGE_BASE_URL + relativeUrl;
   }
 }

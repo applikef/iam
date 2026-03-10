@@ -2,48 +2,91 @@
   "moods": [
     {
       "id": "angry",
+      "polarity": "negative",
       "title": {
         "female": "כועסת",
         "male": "כועס"
+      },
+      "image": {
+        "female": "angry-girl",
+        "male": "angry-boy"
       }
     },
     {
       "id": "calm",
+      "polarity": "positive",
       "title": {
         "female": "רגועה",
         "male": "רגוע"
+      },
+      "image": {
+        "female": "calm-girl",
+        "male": "calm-boy"
       }
     },
     {
       "id": "confused",
+      "polarity": "negative",
       "title": {
         "female": "מבולבלת",
         "male": "מבולבל"
+      },
+      "image": {
+        "female": "confused-girl",
+        "male": ""
+      }
+    },
+    {
+      "id": "desperate",
+      "polarity": "negative",
+      "title": {
+        "female": "מיואשת",
+        "male": "מיואש"
+      },
+      "image": {
+        "female": "desperate-girl",
+        "male": ""
       }
     },
     {
       "id": "happy",
+      "polarity": "positive",
       "title": {
         "female": "שמחה",
         "male": "שמח"
+      },
+      "image": {
+        "female": "happy-girl",
+        "male": "happy-girl"
       }
     },
     {
       "id": "nervous",
+      "polarity": "negative",
       "title": {
         "female": "עצבנית",
         "male": "עצבני"
+      },
+      "image": {
+        "female": "nervous-girl",
+        "male": ""
       }
     },
     {
       "id": "protected",
+      "polarity": "positive",
       "title": {
         "female": "מוגנת",
         "male": "מוגן"
+      },
+      "image": {
+        "female": "protected-girl",
+        "male": ""
       }
     },
     {
       "id": "sad",
+      "polarity": "negative",
       "title": {
         "female": "עצובה",
         "male": "עצוב"
@@ -55,23 +98,38 @@
     },
     {
       "id": "satisfied",
+      "polarity": "positive",
       "title": {
         "female": "מרוצה",
         "male": "מרוצה"
+      },
+      "image": {
+        "female": "satisfied-girl",
+        "male": ""
       }
     },
     {
       "id": "scared",
+      "polarity": "negative",
       "title": {
         "female": "פוחדת",
         "male": "פוחד"
+      },
+      "image": {
+        "female": "scared-girl",
+        "male": ""
       }
     },
     {
       "id": "worried",
+      "polarity": "negative",
       "title": {
         "female": "דואגת",
         "male": "דואג"
+      },
+      "image": {
+        "female": "worried-girl",
+        "male": ""
       }
     }
   ]

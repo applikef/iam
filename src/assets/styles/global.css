@@ -43,7 +43,16 @@
   border: none;
 }
 
+.margin-xl {
+  margin: var(--size-xl);
+}
+
 .margin-xs {
   margin: var(--size-xs);
 }
+
+.margin-bottom-xl {
+  margin-bottom: var(--size-xl);
+}
+
 

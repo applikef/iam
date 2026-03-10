@@ -1,3 +1,5 @@
+import { POLARITY } from "../utils/constantsUtil";
+
 /*********
  * Image Catalog
  */
@@ -37,6 +39,7 @@ export interface GenderSplitType {
 
 export interface MoodType {
   id: string;
+  polarity: POLARITY;
   title: GenderSplitType;
   image: GenderSplitType;
 }
