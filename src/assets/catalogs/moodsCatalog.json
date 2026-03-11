@@ -112,8 +112,8 @@
       "id": "scared",
       "polarity": "negative",
       "title": {
-        "female": "פוחדת",
-        "male": "פוחד"
+        "female": "מפוחדת",
+        "male": "מפוחד"
       },
       "image": {
         "female": "scared-girl",

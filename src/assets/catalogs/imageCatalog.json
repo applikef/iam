@@ -12,6 +12,21 @@
       "title": ""
     },
     {
+      "id": "app-friend",
+      "url": "resources/imageCatalog/ducky-duck-calm.png",
+      "title": ""
+    },
+    {
+      "id": "app-friend-happy",
+      "url": "resources/imageCatalog/ducky-duck-happy.png",
+      "title": ""
+    },
+    {
+      "id": "app-friend-thinking",
+      "url": "resources/imageCatalog/ducky-duck-thinking.png",
+      "title": ""
+    },
+    {
       "id": "calm-boy",
       "url": "resources/imageCatalog/kid-in-field.jpg",
       "title": ""
@@ -24,11 +39,6 @@
     {
       "id": "desperate-girl",
       "url": "resources/imageCatalog/desperate-girl.jpeg",
-      "title": ""
-    },
-    {
-      "id": "app-friend",
-      "url": "resources/imageCatalog/ducky-duck.png",
       "title": ""
     },
     {

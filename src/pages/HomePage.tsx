@@ -19,11 +19,11 @@ export const HomePage = () => {
   return (
     <>
       <div className="app-page">  
-        <div className="app-header-xl">
-          <div className="margin-xl">שלום {name === undefined ? "חברה" : name }</div>
+        <div className="normal-color app-header-xl">
+          <div className="margin-xl">שלום {name === "" ? "חברה" : name }</div>
           <img src={friendImageUrl} alt="App friend" height="256px" />
           <div>מעכשיו אני איתך</div>
-          <Link to="/moods" className="app-header-m">
+          <Link to="/moods" className="normal-color app-header-m">
               <div>הקליקי כאן כדי להמשיך</div>
           </Link> 
         </div>

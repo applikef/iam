@@ -46,14 +46,14 @@ export const Moods = () => {
     <>
       <div className="app-page">
         <Banner />
-        <div className="app-header-xl">
+        <div className="normal-color app-header-xl">
           הקליקי על איך שאת מרגישה?
         </div>
-        <div className="app-clickable margin-bottom-xl">
+        <div className="app-clickable normal-color margin-bottom-xl">
           { selectedList.length > 0 &&
-            <Link to="/explore" className="app-header-m">
+            <Link to="/explore" className="normal-color app-header-m">
               <div>
-                הקליקי כאן כדי שנחשוב ביחד מה יכול לעזור לך?
+                הקליקי כאן כדי שנמשילדך?
               </div>
             </Link>
           }

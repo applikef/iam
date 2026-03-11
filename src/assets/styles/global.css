@@ -1,6 +1,23 @@
 @import './colors.css';
 @import './sizes.css';
 
+:root {
+  --positive: var(--orange);
+  --negative: var(--blue-01);
+  --normal: var(--pink-04);
+}
+
+.positive-color {
+  color: var(--positive);
+}
+.negative-color {
+  color: var(--negative);
+}
+
+.normal-color {
+  color: var(--normal);
+}
+
 .app-page {
   text-align: center;
   direction: rtl;
@@ -15,7 +32,6 @@
   margin-bottom: var(--font-size-xl);
   font-size: var(--font-size-xl);
   font-weight: bold;
-  color: var(--orange);
 }
 
 .app-header-m {
@@ -23,7 +39,6 @@
   margin-bottom: var(--font-size-xl);
   font-size: var(--font-size-m);
   font-weight: bold;
-  color: var(--orange);
 }
 
 .app-clickable {
@@ -53,6 +68,10 @@
 
 .margin-bottom-xl {
   margin-bottom: var(--size-xl);
+}
+
+.margin-top-xl {
+  margin-top: var(--size-xl);
 }
 
 

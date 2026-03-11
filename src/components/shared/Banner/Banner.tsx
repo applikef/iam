@@ -9,6 +9,11 @@ export const Banner = () => {
     <>
         <div>
           <div className="banner-icon-bar">
+            <Link to={"/moods"}>
+              <img src={ IMAGE_BASE_URL+"resources/icons/pin128.png" }
+                className="banner-icon" 
+                title="רגשות"  alt="רגשות" />
+            </Link>
             <div>
               <img src={CatalogUtil.getCatalogImage("app-friend")} alt="" 
                 className="banner-icon" />
