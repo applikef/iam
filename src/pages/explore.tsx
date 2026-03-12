@@ -52,7 +52,8 @@ export const Explore = () => {
                     </div>
                   </Link>
 
-                  <img src={thinkingFriendImageUrl} alt="Thinking app friend"  height={ DEFAULT_FRIEND_HEIGHT } />
+                  <img src={thinkingFriendImageUrl} alt="Thinking app friend"  
+                    className="margin-top-xl" height={ DEFAULT_FRIEND_HEIGHT } />
 
                 </div>
               }
