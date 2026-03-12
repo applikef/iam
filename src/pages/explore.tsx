@@ -5,7 +5,8 @@ import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { MoodsUtil } from "../utils/MoodsUtil";
 import { ImageCatalogUtil } from "../utils/catalogUtil";
 import { Link } from "react-router-dom";
-import { DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
+import { MediaUtil } from "../utils/MediaUtils";
 
 export const Explore = () => {
   // const navigate = useNavigate();
@@ -21,8 +22,8 @@ export const Explore = () => {
   const negative =
     useRef(MoodsUtil.getNegativeMoods(selectedMoodList));;
 
-  const happyFriendImageUrl = ImageCatalogUtil.getCatalogImage("app-friend-happy");
-  const thinkingFriendImageUrl = ImageCatalogUtil.getCatalogImage("app-friend-thinking");
+  const happyFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.HAPPY_FRIEND);
+  const thinkingFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.THINKING_FRIEND);
 
   return (
     <>
@@ -34,7 +35,7 @@ export const Explore = () => {
                 positive.current.length > 0 &&
                 <div>
                   <div className="positive-color">
-                    כמה נפלא שיש לך זמן בו את מרגישה 
+                    כַּמָּה נִפְלָא שֶׁיֵּשׁ לָךְ זְמַן בּוֹ אַתְּ מַרְגִּישָׁה 
                     { MoodsUtil.getTitlesAsString(positive.current) }
                     <img src={happyFriendImageUrl} alt="Happy app friend" height={ DEFAULT_FRIEND_HEIGHT } />
                   </div>
@@ -43,12 +44,13 @@ export const Explore = () => {
               { 
               negative.current.length > 0 &&
                 <div className="margin-top-xl negative-color">
-                  מה נעשה עם זה שאת מרגישה
+                  מָה נַעֲשֶׂה עִם זֶה שֶׁאַתְּ מַרְגִּישָׁה
                   { MoodsUtil.getTitlesAsString(negative.current) }?
 
                   <Link to="/resolve" className="negative-color app-header-m">
                     <div className="margin-top-xl">
-                      הקליקי כאן כדי שנחשוב מה יכול לעזור לך?
+                      <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="24px" /> </span>
+                      הַקְלִיקִי כָּאן כְּדֵי שֶׁנַּחְשֹׁב מָה יָכוֹל לַעֲזֹר לְךָ
                     </div>
                   </Link>
 

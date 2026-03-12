@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Card } from "../components/shared/Card/Card";
 import { MoodsCatalogUtil } from "../utils/catalogUtil";
-import { DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { MoodDescriptor } from "../model/globalTypes";
+import { MediaUtil } from "../utils/MediaUtils";
 
 export const Moods = () => {
   // const navigate = useNavigate();
@@ -47,13 +48,14 @@ export const Moods = () => {
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          הקליקי על איך שאת מרגישה?
+          הַקְלִיקִי עַל הַתְּמוּנָה שֶׁמַּרְאָה אֵיךְ שֶׁאַתְּ מַרְגִּישָׁה
         </div>
         <div className="app-clickable normal-color margin-bottom-xl">
           { selectedList.length > 0 &&
             <Link to="/explore" className="normal-color app-header-m">
               <div>
-                הקליקי כאן כדי שנמשיך?
+                <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> </span>
+                הַקְלִיקִי כָּאן כְּדֵי לְהַמְשִׁיךְ
               </div>
             </Link>
           }
@@ -83,7 +85,8 @@ export const Moods = () => {
           { selectedList.length > 0 &&
             <Link to="/explore" className="normal-color app-header-m">
               <div>
-                הקליקי כאן כדי שנמשיך?
+                <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> </span>
+                הַקְלִיקִי כָּאן כְּדֵי לְהַמְשִׁיךְ
               </div>
             </Link>
           }

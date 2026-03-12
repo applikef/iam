@@ -1,0 +1,6 @@
+@import "./../../assets/styles/global.css";
+
+.details-popup-close {
+  padding-bottom: var(--size-normal);
+  align-self: flex-end;
+}

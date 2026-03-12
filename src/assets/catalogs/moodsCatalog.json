@@ -4,8 +4,8 @@
       "id": "angry",
       "polarity": "negative",
       "title": {
-        "female": "כועסת",
-        "male": "כועס"
+        "female": "כּוֹעֶסֶת",
+        "male": "כּוֹעֵס"
       },
       "image": {
         "female": "angry-girl",
@@ -16,8 +16,8 @@
       "id": "calm",
       "polarity": "positive",
       "title": {
-        "female": "רגועה",
-        "male": "רגוע"
+        "female": "רְגוּעָה",
+        "male": "רָגוּעַ"
       },
       "image": {
         "female": "calm-girl",
@@ -28,8 +28,8 @@
       "id": "confused",
       "polarity": "negative",
       "title": {
-        "female": "מבולבלת",
-        "male": "מבולבל"
+        "female": "מְבֻלְבֶּלֶת",
+        "male": "מְבֻלְבָּל"
       },
       "image": {
         "female": "confused-girl",
@@ -40,8 +40,8 @@
       "id": "desperate",
       "polarity": "negative",
       "title": {
-        "female": "מיואשת",
-        "male": "מיואש"
+        "female": "מְיֹאֶשֶׁת",
+        "male": "מְיֹאָשׁ"
       },
       "image": {
         "female": "desperate-girl",
@@ -52,8 +52,8 @@
       "id": "happy",
       "polarity": "positive",
       "title": {
-        "female": "שמחה",
-        "male": "שמח"
+        "female": "שְׂמֵחָה",
+        "male": "שָׂמֵחַ"
       },
       "image": {
         "female": "happy-girl",
@@ -64,8 +64,8 @@
       "id": "nervous",
       "polarity": "negative",
       "title": {
-        "female": "עצבנית",
-        "male": "עצבני"
+        "female": "עַצְבָּנִית",
+        "male": "עַצְבָּנִי"
       },
       "image": {
         "female": "nervous-girl",
@@ -76,8 +76,8 @@
       "id": "protected",
       "polarity": "positive",
       "title": {
-        "female": "מוגנת",
-        "male": "מוגן"
+        "female": "מוּגֶנֶת",
+        "male": "מוּגָן"
       },
       "image": {
         "female": "protected-girl",
@@ -88,8 +88,8 @@
       "id": "sad",
       "polarity": "negative",
       "title": {
-        "female": "עצובה",
-        "male": "עצוב"
+        "female": "עֲצוּבָה",
+        "male": "עָצוּב"
       },
       "image": {
         "female": "sad-female",
@@ -100,8 +100,8 @@
       "id": "satisfied",
       "polarity": "positive",
       "title": {
-        "female": "מרוצה",
-        "male": "מרוצה"
+        "female": "מְרֻצָּה",
+        "male": "מְרֻצֶּה"
       },
       "image": {
         "female": "satisfied-girl",
@@ -112,8 +112,8 @@
       "id": "scared",
       "polarity": "negative",
       "title": {
-        "female": "מפוחדת",
-        "male": "מפוחד"
+        "female": "מְפֻחֶדֶת",
+        "male": "מְפֻחָד"
       },
       "image": {
         "female": "scared-girl",
@@ -124,8 +124,8 @@
       "id": "worried",
       "polarity": "negative",
       "title": {
-        "female": "דואגת",
-        "male": "דואג"
+        "female": "דּוֹאֶגֶת",
+        "male": "דּוֹאֵג"
       },
       "image": {
         "female": "worried-girl",

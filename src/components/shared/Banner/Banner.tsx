@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 import './Banner.css'
-import { HOME_PAGE_PATH, IMAGE_BASE_URL } from "./../../../utils/constantsUtil";
-import { ImageCatalogUtil } from "../../../utils/catalogUtil";
+import { APP_ICONS, HOME_PAGE_PATH } from "./../../../utils/constantsUtil";
+import { MediaUtil } from "../../../utils/MediaUtils";
 
 export const Banner = () => {
   return (
@@ -10,18 +10,18 @@ export const Banner = () => {
         <div>
           <div className="banner-icon-bar">
             <Link to={"/moods"}>
-              <img src={ IMAGE_BASE_URL+"resources/icons/pin128.png" }
+              <img src={ MediaUtil.getAppIcon(APP_ICONS.MOODS) }
                 className="banner-icon" 
-                title="רגשות"  alt="רגשות" />
+                title="אֵיךְ אֲנִי מַרְגִּישָׁה?"  alt="אֵיךְ אֲנִי מַרְגִּישָׁה?" />
             </Link>
             <div>
-              <img src={ImageCatalogUtil.getCatalogImage("app-friend")} alt="" 
-                className="banner-icon" />
+              <img src={ MediaUtil.getAppIcon(APP_ICONS.CALM_FRIEND) } alt="" 
+                height="32px" />
             </div>
             <Link to={HOME_PAGE_PATH}>
-              <img src={ IMAGE_BASE_URL+"resources/icons/home128.png" }
+              <img src={ MediaUtil.getAppIcon(APP_ICONS.HOME) }
                 className="banner-icon" 
-                title="עמוד הבית"  alt="עמוד הבית" />
+                title="לַחֲזֹר לַהַתְחָלָה"  alt="לַחֲזֹר לַהַתְחָלָה" />
             </Link>
           </div>
           <hr className="banner-hr"/>

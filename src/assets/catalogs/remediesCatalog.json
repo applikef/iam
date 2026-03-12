@@ -3,8 +3,8 @@
     {
       "id": "be-alone",
       "title": {
-        "female": "לשבת עם עצמי",
-        "male": "לשבת עם עצמי"
+        "female": "לָשֶׁבֶת עִם עַצְמִי",
+        "male": "לָשֶׁבֶת עִם עַצְמִי"
       },
       "image": {
         "female": "girl-sitting-alone",
@@ -14,8 +14,8 @@
     {
       "id": "hug-a-doll",
       "title": {
-        "female": "לחבק משהו",
-        "male": "לחבק משהו"
+        "female": "לְחַבֵּק מַשֶּׁהוּ",
+        "male": "לְחַבֵּק מַשֶּׁהוּ"
       },
       "image": {
         "female": "girl-hugs",
@@ -25,8 +25,8 @@
     {
       "id": "hug-me",
       "title": {
-        "female": "שמישהו יחבק אותי",
-        "male": "שמישהו יחבק אותי"
+        "female": "שֶׁמִּישֶׁהוּ יְחַבֵּק אוֹתִי",
+        "male": "שֶׁמִּישֶׁהוּ יְחַבֵּק אוֹתִי"
       },
       "image": {
         "female": "girl-is-hugged",
@@ -36,8 +36,8 @@
     {
       "id": "talk-to-someone",
       "title": {
-        "female": "לדבר עם מישהו",
-        "male": "לדבר עם מישהו"
+        "female": "לְדַבֵּר עִם מִישֶׁהוּ",
+        "male": "לְדַבֵּר עִם מִישֶׁהוּ"
       },
       "image": {
         "female": "girl-talks-to-someone",
@@ -47,8 +47,8 @@
     {
       "id": "doll-on-me",
       "title": {
-        "female": "לנדנד בובה על הבטן שלי",
-        "male": "לנדנד בובה על הבטן שלי"
+        "female": "לְנַדְנֵד בֻּבָּה עַל הַבֶּטֶן שֶׁלִּי",
+        "male": "לְנַדְנֵד בֻּבָּה עַל הַבֶּטֶן שֶׁלִּי"
       },
       "image": {
         "female": "girl-lying-with-bear",
@@ -58,8 +58,8 @@
     {
       "id": "scream",
       "title": {
-        "female": "לצעוק",
-        "male": "לצעוק"
+        "female": "לִצְעֹק",
+        "male": "לִצְעֹק"
       },
       "image": {
         "female": "angry-girl",
@@ -69,8 +69,8 @@
     {
       "id": "drum",
       "title": {
-        "female": "לתופף",
-        "male": "לתופף"
+        "female": "לְתוֹפֵף",
+        "male": "לְתוֹפֵף"
       },
       "image": {
         "female": "girl-tapping",
@@ -80,8 +80,8 @@
     {
       "id": "watch-tv",
       "title": {
-        "female": "לראות טלויזיה",
-        "male": "לראות טלויזיה"
+        "female": "לִרְאוֹת טֵלֵוִיזְיָה",
+        "male": "לִרְאוֹת טֵלֵוִיזְיָה"
       },
       "image": {
         "female": "girl-watches-tv",
@@ -91,8 +91,8 @@
     {
       "id": "play-with-friend",
       "title": {
-        "female": "לשחק עם מישהו",
-        "male": "לשחק עם מישהו"
+        "female": "לְשַׂחֵק עִם מִישֶׁהוּ",
+        "male": "לְשַׂחֵק עִם מִישֶׁהוּ"
       },
       "image": {
         "female": "girls-playing",
@@ -102,8 +102,8 @@
     {
       "id": "eat",
       "title": {
-        "female": "לאכול",
-        "male": "לאכול"
+        "female": "לֶאֱכֹל",
+        "male": "לֶאֱכֹל"
       },
       "image": {
         "female": "girl-eating",
@@ -113,8 +113,8 @@
     {
       "id": "drink",
       "title": {
-        "female": "לשתות",
-        "male": "לשתות"
+        "female": "לִשְׁתּוֹת",
+        "male": "לִשְׁתּוֹת"
       },
       "image": {
         "female": "girl-drinking",
@@ -124,8 +124,8 @@
     {
       "id": "draw",
       "title": {
-        "female": "לצייר",
-        "male": "לצייר"
+        "female": "לְצַיֵּר",
+        "male": "לְצַיֵּר"
       },
       "image": {
         "female": "girl-draws",
@@ -135,8 +135,8 @@
     {
       "id": "go-out",
       "title": {
-        "female": "לצאת החוצה",
-        "male": "לצאת החוצה"
+        "female": "לָצֵאת הַחוּצָה",
+        "male": "לָצֵאת הַחוּצָה"
       },
       "image": {
         "female": "girl-on-the-street",
@@ -146,8 +146,8 @@
     {
       "id": "cry",
       "title": {
-        "female": "לבכות",
-        "male": "לבכות"
+        "female": "לִבְכּוֹת",
+        "male": "לִבְכּוֹת"
       },
       "image": {
         "female": "girl-crying",
