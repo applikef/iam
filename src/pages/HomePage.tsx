@@ -22,7 +22,7 @@ export const HomePage = () => {
           <div className="margin-xl">שָׁלוֹם {name === "" ? "חֲבֵרָה" : name }</div>
           <img src={friendImageUrl} alt="App friend" height="256px" />
           <div>מֵעַכְשָׁו אֲנִי אִתָּךְ</div>
-          <Link to="/moods" className="normal-color app-header-m">
+          <Link to="/feelings" className="normal-color app-header-m">
               <div>
                 <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="32px" /> </span>
                 הַקְלִיקִי כָּאן כְּדֵי לְהַמְשִׁיךְ

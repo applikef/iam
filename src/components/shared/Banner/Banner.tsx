@@ -9,7 +9,7 @@ export const Banner = () => {
     <>
         <div>
           <div className="banner-icon-bar">
-            <Link to={"/moods"}>
+            <Link to={"/feelings"}>
               <img src={ MediaUtil.getAppIcon(APP_ICONS.MOODS) }
                 className="banner-icon" 
                 title="אֵיךְ אֲנִי מַרְגִּישָׁה?"  alt="אֵיךְ אֲנִי מַרְגִּישָׁה?" />
