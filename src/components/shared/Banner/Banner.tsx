@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import './Banner.css'
 import { HOME_PAGE_PATH, IMAGE_BASE_URL } from "./../../../utils/constantsUtil";
-import { CatalogUtil } from "../../../utils/catalogUtil";
+import { ImageCatalogUtil } from "../../../utils/catalogUtil";
 
 export const Banner = () => {
   return (
@@ -15,7 +15,7 @@ export const Banner = () => {
                 title="רגשות"  alt="רגשות" />
             </Link>
             <div>
-              <img src={CatalogUtil.getCatalogImage("app-friend")} alt="" 
+              <img src={ImageCatalogUtil.getCatalogImage("app-friend")} alt="" 
                 className="banner-icon" />
             </div>
             <Link to={HOME_PAGE_PATH}>

@@ -6,3 +6,10 @@ export interface MoodDescriptor {
   title: string;
   image: string | undefined;
 }
+
+export interface RemedyDescriptor {
+  id: string;
+  details: string;
+  title: string;
+  image: string | undefined;
+}

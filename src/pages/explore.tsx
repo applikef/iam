@@ -3,7 +3,7 @@ import { Banner } from "../components/shared/Banner/Banner";
 import "./../assets/styles/global.css";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { MoodsUtil } from "../utils/MoodsUtil";
-import { CatalogUtil } from "../utils/catalogUtil";
+import { ImageCatalogUtil } from "../utils/catalogUtil";
 import { Link } from "react-router-dom";
 import { DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
 
@@ -21,8 +21,8 @@ export const Explore = () => {
   const negative =
     useRef(MoodsUtil.getNegativeMoods(selectedMoodList));;
 
-  const happyFriendImageUrl = CatalogUtil.getCatalogImage("app-friend-happy");
-  const thinkingFriendImageUrl = CatalogUtil.getCatalogImage("app-friend-thinking");
+  const happyFriendImageUrl = ImageCatalogUtil.getCatalogImage("app-friend-happy");
+  const thinkingFriendImageUrl = ImageCatalogUtil.getCatalogImage("app-friend-thinking");
 
   return (
     <>

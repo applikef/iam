@@ -47,3 +47,14 @@ export interface MoodType {
 export interface MoodListType {
   moods: Array<MoodType>;
 }
+
+export interface RemedyType {
+  id: string;
+  title: GenderSplitType;
+  image: GenderSplitType;
+  details: string;
+}
+
+export interface RemedyListType {
+  remedies: Array<RemedyType>;
+}

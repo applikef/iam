@@ -1,0 +1,158 @@
+{
+  "remedies": [
+    {
+      "id": "be-alone",
+      "title": {
+        "female": "לשבת עם עצמי",
+        "male": "לשבת עם עצמי"
+      },
+      "image": {
+        "female": "girl-sitting-alone",
+        "male": ""
+      }
+    },
+    {
+      "id": "hug-a-doll",
+      "title": {
+        "female": "לחבק משהו",
+        "male": "לחבק משהו"
+      },
+      "image": {
+        "female": "girl-hugs",
+        "male": ""
+      }
+    },
+    {
+      "id": "hug-me",
+      "title": {
+        "female": "שמישהו יחבק אותי",
+        "male": "שמישהו יחבק אותי"
+      },
+      "image": {
+        "female": "girl-is-hugged",
+        "male": ""
+      }
+    },
+    {
+      "id": "talk-to-someone",
+      "title": {
+        "female": "לדבר עם מישהו",
+        "male": "לדבר עם מישהו"
+      },
+      "image": {
+        "female": "girl-talks-to-someone",
+        "male": ""
+      }
+    },
+    {
+      "id": "doll-on-me",
+      "title": {
+        "female": "לנדנד בובה על הבטן שלי",
+        "male": "לנדנד בובה על הבטן שלי"
+      },
+      "image": {
+        "female": "girl-lying-with-bear",
+        "male": ""
+      }
+    },
+    {
+      "id": "scream",
+      "title": {
+        "female": "לצעוק",
+        "male": "לצעוק"
+      },
+      "image": {
+        "female": "angry-girl",
+        "male": "angry-boy"
+      }
+    },
+    {
+      "id": "drum",
+      "title": {
+        "female": "לתופף",
+        "male": "לתופף"
+      },
+      "image": {
+        "female": "girl-tapping",
+        "male": ""
+      }
+    },
+    {
+      "id": "watch-tv",
+      "title": {
+        "female": "לראות טלויזיה",
+        "male": "לראות טלויזיה"
+      },
+      "image": {
+        "female": "girl-watches-tv",
+        "male": ""
+      }
+    },
+    {
+      "id": "play-with-friend",
+      "title": {
+        "female": "לשחק עם מישהו",
+        "male": "לשחק עם מישהו"
+      },
+      "image": {
+        "female": "girls-playing",
+        "male": ""
+      }
+    },
+    {
+      "id": "eat",
+      "title": {
+        "female": "לאכול",
+        "male": "לאכול"
+      },
+      "image": {
+        "female": "girl-eating",
+        "male": ""
+      }
+    },
+    {
+      "id": "drink",
+      "title": {
+        "female": "לשתות",
+        "male": "לשתות"
+      },
+      "image": {
+        "female": "girl-drinking",
+        "male": ""
+      }
+    },
+    {
+      "id": "draw",
+      "title": {
+        "female": "לצייר",
+        "male": "לצייר"
+      },
+      "image": {
+        "female": "girl-draws",
+        "male": ""
+      }
+    },
+    {
+      "id": "go-out",
+      "title": {
+        "female": "לצאת החוצה",
+        "male": "לצאת החוצה"
+      },
+      "image": {
+        "female": "girl-on-the-street",
+        "male": ""
+      }
+    },
+    {
+      "id": "cry",
+      "title": {
+        "female": "לבכות",
+        "male": "לבכות"
+      },
+      "image": {
+        "female": "girl-crying",
+        "male": ""
+      }
+    }
+  ]
+}

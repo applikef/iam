@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Card } from "../components/shared/Card/Card";
-import { CatalogUtil } from "../utils/catalogUtil";
+import { MoodsCatalogUtil } from "../utils/catalogUtil";
 import { DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useState } from "react";
@@ -19,7 +19,7 @@ export const Moods = () => {
 
   const [selectedList, setSelectedList] = useState<Array<string>>([])
 
-  var moods = CatalogUtil.getMoods(GENDER.F);
+  var moods = MoodsCatalogUtil.getMoods(GENDER.F);
   
   function updateMoodSelection(moodId: string) {
     var newList: Array<string>;
@@ -34,7 +34,7 @@ export const Moods = () => {
     
     var descriptorList: Array<MoodDescriptor> = [];
     newList.forEach((item: string) => {
-      const d: MoodDescriptor | undefined = CatalogUtil.getMoodDescriptor(item, gender);
+      const d: MoodDescriptor | undefined = MoodsCatalogUtil.getMoodDescriptor(item, gender);
       if (d !== undefined) {
         descriptorList.push(d)
       }
@@ -53,7 +53,7 @@ export const Moods = () => {
           { selectedList.length > 0 &&
             <Link to="/explore" className="normal-color app-header-m">
               <div>
-                הקליקי כאן כדי שנמשילדך?
+                הקליקי כאן כדי שנמשיך?
               </div>
             </Link>
           }
@@ -79,6 +79,16 @@ export const Moods = () => {
           })
         }
         </div>
+        <div className="app-clickable normal-color margin-top-xl margin-bottom-xl">
+          { selectedList.length > 0 &&
+            <Link to="/explore" className="normal-color app-header-m">
+              <div>
+                הקליקי כאן כדי שנמשיך?
+              </div>
+            </Link>
+          }
+        </div>
+
       </div>
     </>
   )

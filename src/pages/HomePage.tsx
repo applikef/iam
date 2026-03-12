@@ -2,9 +2,7 @@ import { useContext } from "react";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import "./../assets/styles/global.css";
 import { Link } from "react-router-dom";
-import { IMAGE_BASE_URL } from "../utils/constantsUtil";
-import { ObjectsUtil } from "../utils/ObjectsUtil";
-import { CatalogUtil } from "../utils/catalogUtil";
+import { ImageCatalogUtil } from "../utils/catalogUtil";
 
 export const HomePage = () => {
   // const navigate = useNavigate();
@@ -14,7 +12,7 @@ export const HomePage = () => {
     gender
   } = useContext(AppContext) as AppContextType;
 
-  const friendImageUrl = CatalogUtil.getCatalogImage("app-friend");
+  const friendImageUrl = ImageCatalogUtil.getCatalogImage("app-friend");
 
   return (
     <>
