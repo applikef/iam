@@ -48,7 +48,7 @@ export const Moods = () => {
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          הַקְלִיקִי עַל הַתְּמוּנָה שֶׁמַּרְאָה אֵיךְ שֶׁאַתְּ מַרְגִּישָׁה
+          הַקְלִיקִי עַל תְּמוּנוֹת שֶׁמַּרְאוֹת אֵיךְ אַתְּ מַרְגִּישָׁה
         </div>
         <div className="app-clickable normal-color margin-bottom-xl">
           { selectedList.length > 0 &&
