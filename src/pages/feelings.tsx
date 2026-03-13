@@ -9,7 +9,7 @@ import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { MoodDescriptor } from "../model/globalTypes";
 import { MediaUtil } from "../utils/MediaUtils";
 
-export const Moods = () => {
+export const Feelings = () => {
   // const navigate = useNavigate();
 
     const { 

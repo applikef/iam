@@ -41,10 +41,10 @@ export const Resolve = () => {
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          בּוֹאִי נַחְשֹׁב מָה יָכוֹל לַעֲזֹר לָךְ לְהַרְגִּישׁ פָּחוֹת 
-          { MoodsUtil.getTitlesAsString(negativeMoods.current) }
+          מָה יָכוֹל לַעֲזֹר לָךְ לְהַרְגִּישׁ פָּחוֹת 
+          { MoodsUtil.getTitlesAsString(negativeMoods.current) }?
         </div>
-        <div className="normal-color margin-bottom-xl app-header-m app-clickable">
+        <div className="normal-color margin-bottom-xl app-header-m">
           הַקְלִיקִי עַל מַשֶּׁהוּ שֶׁאוּלַי יַעֲזֹר לְךָ לְהַרְגִּישׁ יוֹתֵר טוֹב
         </div>
 
