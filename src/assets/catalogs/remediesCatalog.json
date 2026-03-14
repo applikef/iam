@@ -12,6 +12,17 @@
       }
     },
     {
+      "id": "dance",
+      "title": {
+        "female": "לִרְקֹד ",
+        "male": "לִרְקֹד "
+      },
+      "image": {
+        "female": "girl-dancing",
+        "male": ""
+      }
+    },
+    {
       "id": "hug-a-doll",
       "title": {
         "female": "לְחַבֵּק מַשֶּׁהוּ",
@@ -30,6 +41,17 @@
       },
       "image": {
         "female": "girl-is-hugged",
+        "male": ""
+      }
+    },
+    {
+      "id": "listen-to-music",
+      "title": {
+        "female": "לְהַקְשִׁיב לְמוּזִיקָה",
+        "male": "לְהַקְשִׁיב לְמוּזִיקָה"
+      },
+      "image": {
+        "female": "girl-listens-to-music",
         "male": ""
       }
     },

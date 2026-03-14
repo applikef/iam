@@ -2,7 +2,7 @@ import { useContext, useRef } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import "./../assets/styles/global.css";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
-import { MoodsUtil } from "../utils/MoodsUtil";
+import { FeelingsUtil } from "../utils/FeelingsUtil";
 import { ImageCatalogUtil } from "../utils/catalogUtil";
 import { Link } from "react-router-dom";
 import { APP_ICONS, DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
@@ -14,13 +14,13 @@ export const Explore = () => {
   const { 
     name,
     gender,
-    selectedMoodList,
+    selectedFeelingsList,
   } = useContext(AppContext) as AppContextType;
 
   const positive = 
-   useRef(MoodsUtil.getPositiveMoods(selectedMoodList));
+   useRef(FeelingsUtil.getPositiveFeelings(selectedFeelingsList));
   const negative =
-    useRef(MoodsUtil.getNegativeMoods(selectedMoodList));;
+    useRef(FeelingsUtil.getNegativeFeelings(selectedFeelingsList));;
 
   const happyFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.HAPPY_FRIEND);
   const thinkingFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.THINKING_FRIEND);
@@ -36,7 +36,7 @@ export const Explore = () => {
                 <div>
                   <div className="positive-color">
                     כַּמָּה נִפְלָא שֶׁיֵּשׁ לָךְ זְמַן בּוֹ אַתְּ מַרְגִּישָׁה 
-                    { MoodsUtil.getTitlesAsString(positive.current) }
+                    { FeelingsUtil.getTitlesAsString(positive.current) }
                     <img src={happyFriendImageUrl} alt="Happy app friend" height={ DEFAULT_FRIEND_HEIGHT } />
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export const Explore = () => {
               negative.current.length > 0 &&
                 <div className="margin-top-xl negative-color">
                   מָה נַעֲשֶׂה עִם זֶה שֶׁאַתְּ מַרְגִּישָׁה
-                  { MoodsUtil.getTitlesAsString(negative.current) }?
+                  { FeelingsUtil.getTitlesAsString(negative.current) }?
 
                   <Link to="/resolve" className="negative-color app-header-m">
                     <div className="margin-top-xl">

@@ -6,7 +6,7 @@ import "./../assets/styles/global.css";
 import { useContext, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
-import { MoodDescriptor } from "../model/globalTypes";
+import { FeelingDescriptor } from "../model/globalTypes";
 import { MediaUtil } from "../utils/MediaUtils";
 
 export const Feelings = () => {
@@ -15,7 +15,7 @@ export const Feelings = () => {
     const { 
     name,
     gender,
-    setSelectedMoodList
+    setSelectedFeelingsList
   } = useContext(AppContext) as AppContextType;
 
   const [selectedList, setSelectedList] = useState<Array<string>>([])
@@ -33,14 +33,14 @@ export const Feelings = () => {
       setSelectedList([...newList]);
     }
     
-    var descriptorList: Array<MoodDescriptor> = [];
+    var descriptorList: Array<FeelingDescriptor> = [];
     newList.forEach((item: string) => {
-      const d: MoodDescriptor | undefined = MoodsCatalogUtil.getMoodDescriptor(item, gender);
+      const d: FeelingDescriptor | undefined = MoodsCatalogUtil.getFeelingDescriptor(item, gender);
       if (d !== undefined) {
         descriptorList.push(d)
       }
     })
-    setSelectedMoodList(descriptorList);
+    setSelectedFeelingsList(descriptorList);
   }
 
   return (

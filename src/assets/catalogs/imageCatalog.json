@@ -37,6 +37,11 @@
       "title": ""
     },
     {
+      "id": "girl-dancing",
+      "url": "resources/imageCatalog/girl-dancing.png",
+      "title": ""
+    },
+    {
       "id": "girl-draws",
       "url": "resources/imageCatalog/girl-draws.png",
       "title": ""
@@ -59,6 +64,11 @@
     {
       "id": "girl-is-hugged",
       "url": "resources/imageCatalog/girl-is-hugged.png",
+      "title": ""
+    },
+    {
+      "id": "girl-listens-to-music",
+      "url": "resources/imageCatalog/girl-listens-to-music.png",
       "title": ""
     },
     {

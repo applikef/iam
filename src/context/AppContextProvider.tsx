@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GENDER } from '../utils/constantsUtil';
-import { MoodDescriptor } from '../model/globalTypes';
+import { FeelingDescriptor } from '../model/globalTypes';
 
 export type AppContextType = {
   name: string;
@@ -9,8 +9,8 @@ export type AppContextType = {
   gender: GENDER;
   setGender: (val: GENDER) => void;
 
-  selectedMoodList: Array<MoodDescriptor>;
-  setSelectedMoodList: (val: Array<MoodDescriptor>) => void;
+  selectedFeelingsList: Array<FeelingDescriptor>;
+  setSelectedFeelingsList: (val: Array<FeelingDescriptor>) => void;
 };
 
 const AppContext = React.createContext<AppContextType | null>(null);
@@ -31,11 +31,11 @@ export const AppContextProvider: React.FC<React.PropsWithChildren> = ({
     setGenderValue(val);
   }
 
-  const [selectedMoodList, setSelectedMoodListValue] = 
-    useState<Array<MoodDescriptor>>([]);
+  const [selectedFeelingsList, setSelectedFeelingsListValue] = 
+    useState<Array<FeelingDescriptor>>([]);
 
-  const setSelectedMoodList = (val: Array<MoodDescriptor>) => {
-    setSelectedMoodListValue(val);
+  const setSelectedFeelingsList = (val: Array<FeelingDescriptor>) => {
+    setSelectedFeelingsListValue(val);
   }
 
   return (
@@ -45,8 +45,8 @@ export const AppContextProvider: React.FC<React.PropsWithChildren> = ({
         setName,
         gender,
         setGender,
-        selectedMoodList,
-        setSelectedMoodList
+        selectedFeelingsList,
+        setSelectedFeelingsList
       }}
     >
       {children}

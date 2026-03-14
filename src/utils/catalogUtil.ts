@@ -1,5 +1,5 @@
 import { ImageCatalogEntryType, ImageCatalogType, MoodListType, RemedyListType } from "../model/catalogTypes";
-import { MoodDescriptor, RemedyDescriptor } from "../model/globalTypes";
+import { FeelingDescriptor, RemedyDescriptor } from "../model/globalTypes";
 import { IMAGE_BASE_URL, GENDER } from "./constantsUtil";
 import { ObjectsUtil } from "./ObjectsUtil";
 
@@ -50,10 +50,10 @@ export class MoodsCatalogUtil {
   private static  moodList: MoodListType = require("./../assets/catalogs/moodsCatalog.json");
 
   public static getMoods(gender: GENDER) {
-    var moodDescriptorList: Array<MoodDescriptor> = [];
+    var FeelingDescriptorList: Array<FeelingDescriptor> = [];
 
     MoodsCatalogUtil.moodList.moods.forEach(mood => {
-      moodDescriptorList.push ({
+      FeelingDescriptorList.push ({
           id: mood.id,
           title: mood.title[gender],
           polarity: mood.polarity,
@@ -63,10 +63,10 @@ export class MoodsCatalogUtil {
         }
       )
     });
-    return moodDescriptorList;
+    return FeelingDescriptorList;
   }
 
-  public static getMoodDescriptor(id: string, gender: GENDER): MoodDescriptor | undefined {
+  public static getFeelingDescriptor(id: string, gender: GENDER): FeelingDescriptor | undefined {
     const moods = MoodsCatalogUtil.moodList.moods;
     for (var i=0; i < moods.length; i++) {
       const mood = moods[i];

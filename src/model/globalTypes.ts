@@ -1,6 +1,6 @@
 import { POLARITY } from "../utils/constantsUtil";
 
-export interface MoodDescriptor {
+export interface FeelingDescriptor {
   id: string;
   polarity: POLARITY;
   title: string;

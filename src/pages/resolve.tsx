@@ -5,7 +5,7 @@ import "./../assets/styles/global.css";
 import { useContext, useRef, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
-import { MoodsUtil } from "../utils/MoodsUtil";
+import { FeelingsUtil } from "../utils/FeelingsUtil";
 import { DetailsPopup } from "../components/detailsPopup/DetailsPopup";
 
 export const Resolve = () => {
@@ -14,14 +14,14 @@ export const Resolve = () => {
   const { 
     name,
     gender,
-    selectedMoodList
+    selectedFeelingsList
   } = useContext(AppContext) as AppContextType;
 
-  const negativeMoods = useRef(MoodsUtil.getNegativeMoods(selectedMoodList));;
+  const negativeFeelings = useRef(FeelingsUtil.getNegativeFeelings(selectedFeelingsList));;
 
   var remedies = RemediesCatalogUtil.getRemedies(GENDER.F);
 
-  const [selectedRemedyId, setSelectedRemedyId] = useState<string | null>();
+  const [selectedRemedyId, setSelectedRemedyId] = useState<string | null>(null);
 
   function remedySelectionHandler(id: string) {
     setSelectedRemedyId(id);
@@ -42,7 +42,7 @@ export const Resolve = () => {
         <Banner />
         <div className="normal-color app-header-xl">
           מָה יָכוֹל לַעֲזֹר לָךְ לְהַרְגִּישׁ פָּחוֹת 
-          { MoodsUtil.getTitlesAsString(negativeMoods.current) }?
+          { FeelingsUtil.getTitlesAsString(negativeFeelings.current) }?
         </div>
         <div className="normal-color margin-bottom-xl app-header-m">
           הַקְלִיקִי עַל מַשֶּׁהוּ שֶׁאוּלַי יַעֲזֹר לְךָ לְהַרְגִּישׁ יוֹתֵר טוֹב
@@ -58,7 +58,7 @@ export const Resolve = () => {
               <Card key={remedy.id}
                   content={ remedy.title } 
                   media={ remedy.image }
-                  height={ DEFAULT_IMAGE_HEIGHT }
+                  height={ DEFAULT_IMAGE_HEIGHT * 3 / 4 }
               />
               </span>
             )
