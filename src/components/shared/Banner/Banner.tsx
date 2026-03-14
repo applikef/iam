@@ -14,10 +14,6 @@ export const Banner = () => {
                 className="banner-icon" 
                 title="אֵיךְ אֲנִי מַרְגִּישָׁה?"  alt="אֵיךְ אֲנִי מַרְגִּישָׁה?" />
             </Link>
-            <div>
-              <img src={ MediaUtil.getAppIcon(APP_ICONS.CALM_FRIEND) } alt="" 
-                height="32px" />
-            </div>
             <Link to={HOME_PAGE_PATH}>
               <img src={ MediaUtil.getAppIcon(APP_ICONS.HOME) }
                 className="banner-icon" 

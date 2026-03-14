@@ -67,7 +67,7 @@ export const Resolve = () => {
 
         <div className="margin-top-xl negative-color">
           <Link to="/feelings" className="app-header-m">
-            <div className="margin-top-xl">
+            <div className="margin-top-xl margin-bottom-xl">
               <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> </span>
               מַרְגִּישָׁה אַחֶרֶת? הַקְלִיקִי כָּאן
             </div>

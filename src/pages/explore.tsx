@@ -34,9 +34,11 @@ export const Explore = () => {
                 positive.current.length > 0 &&
                 <div>
                   <div className="positive-color">
-                    כַּמָּה נִפְלָא שֶׁיֵּשׁ לָךְ זְמַן בּוֹ אַתְּ מַרְגִּישָׁה 
+                    כַּמָּה נִפְלָא שֶׁיֵּשׁ זְמַן בּוֹ אַתְּ מַרְגִּישָׁה 
                     { FeelingsUtil.getTitlesAsString(positive.current) }
-                    <img src={happyFriendImageUrl} alt="Happy app friend" height={ DEFAULT_FRIEND_HEIGHT } />
+                    <div>
+                      <img src={happyFriendImageUrl} alt="Happy app friend" height={ DEFAULT_FRIEND_HEIGHT } />
+                    </div>
                   </div>
                 </div>
               }
