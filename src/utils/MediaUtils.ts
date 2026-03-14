@@ -4,7 +4,7 @@ export class MediaUtil {
   public static getAppIcon(iconType: APP_ICONS): string {
     switch(iconType) {
       case APP_ICONS.HOME:
-        return IMAGE_BASE_URL + "resources/icons/duckyHome123.png";
+        return IMAGE_BASE_URL + "resources/icons/duckyHome128.png";
       case APP_ICONS.MOODS:
         return IMAGE_BASE_URL+"resources/icons/pin128.png";
       case APP_ICONS.CALM_FRIEND: 
