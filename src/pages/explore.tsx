@@ -3,7 +3,6 @@ import { Banner } from "../components/shared/Banner/Banner";
 import "./../assets/styles/global.css";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { FeelingsUtil } from "../utils/FeelingsUtil";
-import { ImageCatalogUtil } from "../utils/catalogUtil";
 import { Link } from "react-router-dom";
 import { APP_ICONS, DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
 import { MediaUtil } from "../utils/MediaUtils";
@@ -42,7 +41,18 @@ export const Explore = () => {
                 </div>
               }
               { 
-              negative.current.length > 0 &&
+                negative.current.length === 0 &&
+                <div className="margin-top-xl negative-color">
+                  <Link to="/feelings" className="app-header-m">
+                    <div className="margin-top-xl">
+                      <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="24px" /> </span>
+                      מַרְגִּישָׁה אַחֶרֶת? הַקְלִיקִי כָּאן
+                    </div>
+                  </Link>
+                </div>
+              }
+              { 
+                negative.current.length > 0 &&
                 <div className="margin-top-xl negative-color">
                   מָה נַעֲשֶׂה עִם זֶה שֶׁאַתְּ מַרְגִּישָׁה
                   { FeelingsUtil.getTitlesAsString(negative.current) }?

@@ -1,12 +1,14 @@
 import { Card } from "../components/shared/Card/Card";
 import { RemediesCatalogUtil } from "../utils/catalogUtil";
-import { DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useRef, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { FeelingsUtil } from "../utils/FeelingsUtil";
 import { DetailsPopup } from "../components/detailsPopup/DetailsPopup";
+import { Link } from "react-router-dom";
+import { MediaUtil } from "../utils/MediaUtils";
 
 export const Resolve = () => {
   // const navigate = useNavigate();
@@ -41,11 +43,8 @@ export const Resolve = () => {
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          מָה יָכוֹל לַעֲזֹר לָךְ לְהַרְגִּישׁ פָּחוֹת 
+          הַקְלִיקִי עַל מַשֶּׁהוּ שֶׁיִּגְרֹם לָךְ לְהַרְגִּישׁ פָּחוֹת 
           { FeelingsUtil.getTitlesAsString(negativeFeelings.current) }?
-        </div>
-        <div className="normal-color margin-bottom-xl app-header-m">
-          הַקְלִיקִי עַל מַשֶּׁהוּ שֶׁאוּלַי יַעֲזֹר לְךָ לְהַרְגִּישׁ יוֹתֵר טוֹב
         </div>
 
         <div className="grid-layout">
@@ -64,6 +63,15 @@ export const Resolve = () => {
             )
           })
         }
+        </div>
+
+        <div className="margin-top-xl negative-color">
+          <Link to="/feelings" className="app-header-m">
+            <div className="margin-top-xl">
+              <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> </span>
+              מַרְגִּישָׁה אַחֶרֶת? הַקְלִיקִי כָּאן
+            </div>
+          </Link>
         </div>
       </div>
 

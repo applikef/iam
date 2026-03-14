@@ -214,13 +214,20 @@ a {
 }
 
 .app-link {
-  color: #61dafb;
+  color: #53198B;
 }
 
 .app-header-xl {
   margin-top: var(--font-size-xl);
   margin-bottom: var(--font-size-xl);
   font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.app-header-l {
+  margin-top: var(--font-size-xl);
+  margin-bottom: var(--font-size-xl);
+  font-size: var(--font-size-l);
   font-weight: bold;
 }
 
@@ -262,6 +269,14 @@ a {
 
 .margin-top-xl {
   margin-top: var(--size-xl);
+}
+
+.margin-left-l {
+  margin-left: var(--size-l);
+}
+
+.margin-left-s {
+  margin-left: var(--size-s);
 }
 
 .info-popup-show {

@@ -1,4 +1,4 @@
-import { ImageCatalogEntryType, ImageCatalogType, MoodListType, RemedyListType } from "../model/catalogTypes";
+import { ImageCatalogEntryType, ImageCatalogType, FeelingListType, RemedyListType } from "../model/catalogTypes";
 import { FeelingDescriptor, RemedyDescriptor } from "../model/globalTypes";
 import { IMAGE_BASE_URL, GENDER } from "./constantsUtil";
 import { ObjectsUtil } from "./ObjectsUtil";
@@ -7,9 +7,6 @@ export class ImageCatalogUtil {
     private static imageCatalog: ImageCatalogType = require("./../assets/catalogs/imageCatalog.json");
     private static catalogImages = ImageCatalogUtil.imageCatalog.images;
 
-  /*********
-   * Image Catalog
-   */    
   public static getCatalogImages(imageIds: string[] | undefined): string[] {
     if (imageIds === undefined) {
       return [];
@@ -46,19 +43,19 @@ export class ImageCatalogUtil {
   }
 }
   
-export class MoodsCatalogUtil {
-  private static  moodList: MoodListType = require("./../assets/catalogs/moodsCatalog.json");
+export class FeelingsCatalogUtil {
+  private static  feelingList: FeelingListType = require("./../assets/catalogs/feelingsCatalog.json");
 
-  public static getMoods(gender: GENDER) {
+  public static getFeelings(gender: GENDER) {
     var FeelingDescriptorList: Array<FeelingDescriptor> = [];
 
-    MoodsCatalogUtil.moodList.moods.forEach(mood => {
+    FeelingsCatalogUtil.feelingList.feelings.forEach(feeling => {
       FeelingDescriptorList.push ({
-          id: mood.id,
-          title: mood.title[gender],
-          polarity: mood.polarity,
-          image: mood.image !== undefined ? 
-            ImageCatalogUtil.getCatalogImage(mood.image[gender]) 
+          id: feeling.id,
+          title: feeling.title[gender],
+          polarity: feeling.polarity,
+          image: feeling.image !== undefined ? 
+            ImageCatalogUtil.getCatalogImage(feeling.image[gender]) 
           : ImageCatalogUtil.getEmptyImage()
         }
       )
@@ -67,16 +64,16 @@ export class MoodsCatalogUtil {
   }
 
   public static getFeelingDescriptor(id: string, gender: GENDER): FeelingDescriptor | undefined {
-    const moods = MoodsCatalogUtil.moodList.moods;
-    for (var i=0; i < moods.length; i++) {
-      const mood = moods[i];
-      if (mood.id === id) {
+    const feelings = FeelingsCatalogUtil.feelingList.feelings;
+    for (var i=0; i < feelings.length; i++) {
+      const feeling = feelings[i];
+      if (feeling.id === id) {
         return {
-          id: mood.id,
-          title: mood.title[gender],
-          polarity: mood.polarity,
-          image: mood.image !== undefined ? 
-            ImageCatalogUtil.getCatalogImage(mood.image[gender]) 
+          id: feeling.id,
+          title: feeling.title[gender],
+          polarity: feeling.polarity,
+          image: feeling.image !== undefined ? 
+            ImageCatalogUtil.getCatalogImage(feeling.image[gender]) 
           : ImageCatalogUtil.getEmptyImage()
         }
       }

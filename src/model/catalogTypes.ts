@@ -37,15 +37,15 @@ export interface GenderSplitType {
     male: string;
 }
 
-export interface MoodType {
+export interface FeelingType {
   id: string;
   polarity: POLARITY;
   title: GenderSplitType;
   image: GenderSplitType;
 }
 
-export interface MoodListType {
-  moods: Array<MoodType>;
+export interface FeelingListType {
+  feelings: Array<FeelingType>;
 }
 
 export interface RemedyType {

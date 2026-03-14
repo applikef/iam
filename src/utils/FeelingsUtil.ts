@@ -1,5 +1,6 @@
 import { FeelingDescriptor } from "../model/globalTypes";
-import { POLARITY } from "./constantsUtil";
+import { FeelingsCatalogUtil } from "./catalogUtil";
+import { GENDER, POLARITY } from "./constantsUtil";
 
 export class FeelingsUtil {
   public static getPolarityMoods(feelingsList: Array<FeelingDescriptor>, polarity: POLARITY): Array<FeelingDescriptor> {
@@ -10,6 +11,17 @@ export class FeelingsUtil {
       }
     }
     return list;
+  }
+
+  public static getFeelingsDescriptorList(feelingsIdList: Array<string>, gender: GENDER): Array<FeelingDescriptor> {
+    var descriptorList: Array<FeelingDescriptor> = [];
+    feelingsIdList.forEach((item: string) => {
+      const d: FeelingDescriptor | undefined = FeelingsCatalogUtil.getFeelingDescriptor(item, gender);
+      if (d !== undefined) {
+        descriptorList.push(d)
+      }
+    })
+    return descriptorList;
   }
 
   public static getPositiveFeelings(feelingsList: Array<FeelingDescriptor>): Array<FeelingDescriptor> {
