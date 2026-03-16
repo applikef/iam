@@ -1,15 +1,27 @@
 {
   "feelings": [
     {
-      "id": "angry",
-      "polarity": "negative",
+      "id": "protected",
+      "polarity": "positive",
       "title": {
-        "female": "כּוֹעֶסֶת",
-        "male": "כּוֹעֵס"
+        "female": "מוּגֶנֶת",
+        "male": "מוּגָן"
       },
       "image": {
-        "female": "angry-girl",
-        "male": "angry-boy"
+        "female": "protected-girl",
+        "male": ""
+      }
+    },
+    {
+      "id": "happy",
+      "polarity": "positive",
+      "title": {
+        "female": "שְׂמֵחָה",
+        "male": "שָׂמֵחַ"
+      },
+      "image": {
+        "female": "happy-girl",
+        "male": "happy-girl"
       }
     },
     {
@@ -22,6 +34,18 @@
       "image": {
         "female": "calm-girl",
         "male": "calm-boy"
+      }
+    },
+    {
+      "id": "satisfied",
+      "polarity": "positive",
+      "title": {
+        "female": "מְרֻצָּה",
+        "male": "מְרֻצֶּה"
+      },
+      "image": {
+        "female": "satisfied-girl",
+        "male": ""
       }
     },
     {
@@ -49,18 +73,6 @@
       }
     },
     {
-      "id": "happy",
-      "polarity": "positive",
-      "title": {
-        "female": "שְׂמֵחָה",
-        "male": "שָׂמֵחַ"
-      },
-      "image": {
-        "female": "happy-girl",
-        "male": "happy-girl"
-      }
-    },
-    {
       "id": "nervous",
       "polarity": "negative",
       "title": {
@@ -69,18 +81,6 @@
       },
       "image": {
         "female": "nervous-girl",
-        "male": ""
-      }
-    },
-    {
-      "id": "protected",
-      "polarity": "positive",
-      "title": {
-        "female": "מוּגֶנֶת",
-        "male": "מוּגָן"
-      },
-      "image": {
-        "female": "protected-girl",
         "male": ""
       }
     },
@@ -94,18 +94,6 @@
       "image": {
         "female": "sad-female",
         "male": "sad-child"
-      }
-    },
-    {
-      "id": "satisfied",
-      "polarity": "positive",
-      "title": {
-        "female": "מְרֻצָּה",
-        "male": "מְרֻצֶּה"
-      },
-      "image": {
-        "female": "satisfied-girl",
-        "male": ""
       }
     },
     {
@@ -130,6 +118,18 @@
       "image": {
         "female": "worried-girl",
         "male": ""
+      }
+    },
+    {
+      "id": "angry",
+      "polarity": "negative",
+      "title": {
+        "female": "כּוֹעֶסֶת",
+        "male": "כּוֹעֵס"
+      },
+      "image": {
+        "female": "angry-girl",
+        "male": "angry-boy"
       }
     }
   ]
