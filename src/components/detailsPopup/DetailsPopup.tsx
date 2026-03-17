@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./DetailsPopup.css";
+import AppContext, { AppContextType } from "../../context/AppContextProvider";
 
 export interface DetailsPopupProps {
   onClose: Function;
@@ -9,9 +10,14 @@ export interface DetailsPopupProps {
 }
 
 export const DetailsPopup = (props: DetailsPopupProps) => {
+    const { 
+      name,
+      gender,
+      isMobile
+  } = useContext(AppContext) as AppContextType;
+
   const baseUrl = props.baseUrl ? props.baseUrl : "";
   const fileName = props.infoId ? `${props.infoId}.html` : props.fileName;
-  const smallDevice = true;
 
   function hasInfo():boolean {
     if (props.infoId !== undefined && props.infoId.length > 0) { 
@@ -27,8 +33,8 @@ export const DetailsPopup = (props: DetailsPopupProps) => {
           <span className="details-popup-close app-clickable" onClick={() => props.onClose()}>סגור חלון</span>
           <iframe title="mouseJumpingShapeClick" 
             src={`resources/${baseUrl}/${fileName}`} 
-            height={smallDevice ? "250px" : "500px"} 
-            width={smallDevice ? "500px" : "1000px"}
+            height={isMobile ? "500px" : "500px"} 
+            width={isMobile ? "250px" : "1000px"}
           />
         </div>
       }

@@ -1,19 +1,27 @@
-import { useContext } from "react";
+import { useContext, useLayoutEffect } from "react";
+import { useMediaQuery } from 'react-responsive'
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import "./../assets/styles/global.css";
 import { Link } from "react-router-dom";
 import { MediaUtil } from "../utils/MediaUtils";
-import { APP_ICONS } from "../utils/constantsUtil";
+import { APP_ICONS, MOBILE_SCREEN_WIDTH } from "../utils/constantsUtil";
 
 export const HomePage = () => {
   // const navigate = useNavigate();
   const { 
     name,
     setName,
-    gender
+    gender,
+    setIsMobile
   } = useContext(AppContext) as AppContextType;
 
+  const isMobile = useMediaQuery({ query: `(max-width: ${ MOBILE_SCREEN_WIDTH }px)` });
   const friendImageUrl = MediaUtil.getAppIcon(APP_ICONS.CALM_FRIEND);
+
+  useLayoutEffect(() => {
+    setIsMobile(isMobile);
+  }, [isMobile, setIsMobile]);
+
 
   return (
     <>
@@ -31,8 +39,8 @@ export const HomePage = () => {
           <div className="margin-top-xl">
             <iframe title="intro" style={{"border": "none"}}
               src={`/iam/resources/intro.html`} 
-              height={"100px"} 
-              width={"500px"}
+              height={ isMobile ? "150px" : "100px"} 
+              width={ isMobile ? "250px" : "500px"}
             />
           </div> 
         </div>

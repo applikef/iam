@@ -9,6 +9,9 @@ export type AppContextType = {
   gender: GENDER;
   setGender: (val: GENDER) => void;
 
+  isMobile: boolean;
+  setIsMobile: (val: boolean) => void;
+
   selectedFeelingsList: Array<FeelingDescriptor>;
   setSelectedFeelingsList: (val: Array<FeelingDescriptor>) => void;
 };
@@ -31,6 +34,11 @@ export const AppContextProvider: React.FC<React.PropsWithChildren> = ({
     setGenderValue(val);
   }
 
+  const [isMobile, setIsMobileState] = useState<boolean>(false);
+  const setIsMobile = (val: boolean) => {
+    setIsMobileState(val);
+  }
+
   const [selectedFeelingsList, setSelectedFeelingsListValue] = 
     useState<Array<FeelingDescriptor>>([]);
 
@@ -45,6 +53,8 @@ export const AppContextProvider: React.FC<React.PropsWithChildren> = ({
         setName,
         gender,
         setGender,
+        isMobile,
+        setIsMobile,      
         selectedFeelingsList,
         setSelectedFeelingsList
       }}
