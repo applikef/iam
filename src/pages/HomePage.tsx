@@ -27,7 +27,14 @@ export const HomePage = () => {
                 <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="32px" /> </span>
                 הַקְלִיקִי כָּאן כְּדֵי לְסַפֵּר לִי
               </div>
-          </Link> 
+          </Link>
+          <div className="margin-top-xl">
+            <iframe title="intro" style={{"border": "none"}}
+              src={`/iam/resources/intro.html`} 
+              height={"100px"} 
+              width={"500px"}
+            />
+          </div> 
         </div>
       </div>
     </>
