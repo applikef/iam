@@ -34,7 +34,7 @@ export const DetailsPopup = (props: DetailsPopupProps) => {
           <iframe title="mouseJumpingShapeClick" 
             src={`resources/${baseUrl}/${fileName}`} 
             height={isMobile ? "500px" : "500px"} 
-            width={isMobile ? "250px" : "1000px"}
+            width={isMobile ? "250px" : "500px"}
           />
         </div>
       }

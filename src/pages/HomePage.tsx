@@ -39,8 +39,8 @@ export const HomePage = () => {
           <div className="margin-top-xl">
             <iframe title="intro" style={{"border": "none"}}
               src={`/iam/resources/intro.html`} 
-              height={ isMobile ? "150px" : "100px"} 
-              width={ isMobile ? "250px" : "500px"}
+              height={ isMobile ? "240px" : "100px"} 
+              width={ isMobile ? "250px" : "550px"}
             />
           </div> 
         </div>
