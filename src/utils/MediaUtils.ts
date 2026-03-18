@@ -5,8 +5,8 @@ export class MediaUtil {
     switch(iconType) {
       case APP_ICONS.HOME:
         return IMAGE_BASE_URL + "resources/icons/duckyHome128.png";
-      case APP_ICONS.MOODS:
-        return IMAGE_BASE_URL+"resources/icons/pin128.png";
+      case APP_ICONS.FEELINGS:
+        return IMAGE_BASE_URL+"resources/icons/feelings128.png";
       case APP_ICONS.CALM_FRIEND: 
         return IMAGE_BASE_URL+"resources/icons/ducky-duck-calm.png";
       case APP_ICONS.HAPPY_FRIEND: 
