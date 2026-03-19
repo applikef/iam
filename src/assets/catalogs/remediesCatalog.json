@@ -8,7 +8,7 @@
       },
       "image": {
         "female": "girl-sitting-alone",
-        "male": ""
+        "male": "boy-sitting-alone"
       }
     },
     {
@@ -19,7 +19,7 @@
       },
       "image": {
         "female": "girl-dancing",
-        "male": ""
+        "male": "boy-dancing"
       }
     },
     {
@@ -30,7 +30,7 @@
       },
       "image": {
         "female": "girl-hugs",
-        "male": ""
+        "male": "boy-hugs"
       }
     },
     {
@@ -40,8 +40,8 @@
         "male": "שֶׁמִּישֶׁהוּ יְחַבֵּק אוֹתִי"
       },
       "image": {
-        "female": "girl-is-hugged",
-        "male": ""
+        "female": "child-is-hugged",
+        "male": "child-is-hugged"
       }
     },
     {
@@ -52,7 +52,7 @@
       },
       "image": {
         "female": "girl-listens-to-music",
-        "male": ""
+        "male": "boy-listens-to-music"
       }
     },
     {
@@ -63,7 +63,7 @@
       },
       "image": {
         "female": "girl-talks-to-someone",
-        "male": ""
+        "male": "boy-talks-to-someone"
       }
     },
     {
@@ -74,7 +74,7 @@
       },
       "image": {
         "female": "girl-lying-with-bear",
-        "male": ""
+        "male": "boy-lying-with-bear"
       }
     },
     {
@@ -96,7 +96,7 @@
       },
       "image": {
         "female": "girl-tapping",
-        "male": ""
+        "male": "boy-tapping"
       }
     },
     {
@@ -107,7 +107,7 @@
       },
       "image": {
         "female": "girl-watches-tv",
-        "male": ""
+        "male": "boy-watches-tv"
       }
     },
     {
@@ -118,7 +118,7 @@
       },
       "image": {
         "female": "girls-playing",
-        "male": ""
+        "male": "boys-playing"
       }
     },
     {
@@ -129,7 +129,7 @@
       },
       "image": {
         "female": "girl-eating",
-        "male": ""
+        "male": "boy-eating"
       }
     },
     {
@@ -140,7 +140,7 @@
       },
       "image": {
         "female": "girl-drinking",
-        "male": ""
+        "male": "boy-drinking"
       }
     },
     {
@@ -151,7 +151,7 @@
       },
       "image": {
         "female": "girl-draws",
-        "male": ""
+        "male": "drawing"
       }
     },
     {
@@ -162,7 +162,7 @@
       },
       "image": {
         "female": "girl-on-the-street",
-        "male": ""
+        "male": "boy-outside"
       }
     },
     {
@@ -173,7 +173,7 @@
       },
       "image": {
         "female": "girl-crying",
-        "male": ""
+        "male": "boy-crying"
       }
     }
   ]

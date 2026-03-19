@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import { Card } from "../components/shared/Card/Card";
 import { FeelingsCatalogUtil } from "../utils/catalogUtil";
 import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
@@ -11,9 +12,10 @@ import { MediaUtil } from "../utils/MediaUtils";
 import { FeelingsUtil } from "../utils/FeelingsUtil";
 
 export const Feelings = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
-    const { 
+  const { 
     name,
     gender,
     setSelectedFeelingsList
@@ -21,9 +23,9 @@ export const Feelings = () => {
 
   const [selectedList, setSelectedList] = useState<Array<string>>([])
 
-  var feelings = FeelingsCatalogUtil.getFeelings(GENDER.F);
+  var feelings = FeelingsCatalogUtil.getFeelings(gender);
   
-  function updateMoodSelection(feelingId: string) {
+  function updateFeelingSelection(feelingId: string) {
     var newList: Array<string>;
     if (selectedList.includes(feelingId)) {
       newList = selectedList.filter((item) => item !== feelingId);
@@ -57,7 +59,7 @@ export const Feelings = () => {
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          הַקְלִיקִי עַל תְּמוּנוֹת שֶׁמַּרְאוֹת אֵיךְ אַתְּ מַרְגִּישָׁה
+          { t("click-on-feelings-images", { context: gender }) }
         </div>
         <div className="app-clickable app-header-l margin-bottom-xl app-link">
           { selectedList.length > 0 &&
@@ -65,24 +67,24 @@ export const Feelings = () => {
               <span className="margin-left-s">
                 <img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> 
               </span>
-              הַקְלִיקִי כָּאן כְּדֵי לְהַמְשִׁיךְ
+              { t("click-to-continue", { context: gender })}
             </div>
           }
         </div>
 
         <div className="grid-layout">
         {
-          feelings.map((mood) => {
+          feelings.map((feeling) => {
             return (
-              <span id={"card-"+mood.id} key={mood.id} 
-                onClick={ () => { updateMoodSelection(mood.id) }}
-                className={ selectedList.includes(mood.id) ?
+              <span id={"card-"+feeling.id} key={feeling.id} 
+                onClick={ () => { updateFeelingSelection(feeling.id) }}
+                className={ selectedList.includes(feeling.id) ?
                   "app-clickable margin-xs app-border-selected"
                 :
                   "app-clickable margin-xs app-no-border"}>
-              <Card key={mood.id}
-                  content={ mood.title } 
-                  media={ mood.image }
+              <Card key={feeling.id}
+                  content={ t(feeling.titleId, { context: gender }).toString() } 
+                  media={ feeling.image }
                   height={ DEFAULT_IMAGE_HEIGHT }
               />
               </span>
@@ -96,7 +98,7 @@ export const Feelings = () => {
               <span className="margin-left-s">
                 <img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> 
               </span>
-              הַקְלִיקִי כָּאן כְּדֵי לְהַמְשִׁיךְ
+              { t("click-to-continue", { context: gender})}
             </div>
           }
         </div>

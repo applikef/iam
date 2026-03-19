@@ -1,4 +1,5 @@
 import { useContext, useRef } from "react";
+import { useTranslation } from 'react-i18next';
 import { Banner } from "../components/shared/Banner/Banner";
 import "./../assets/styles/global.css";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
@@ -6,9 +7,10 @@ import { FeelingsUtil } from "../utils/FeelingsUtil";
 import { Link } from "react-router-dom";
 import { APP_ICONS, DEFAULT_FRIEND_HEIGHT } from "../utils/constantsUtil";
 import { MediaUtil } from "../utils/MediaUtils";
+import { FeelingDescriptor } from "../model/globalTypes";
 
 export const Explore = () => {
-  // const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { 
     name,
@@ -24,6 +26,19 @@ export const Explore = () => {
   const happyFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.HAPPY_FRIEND);
   const thinkingFriendImageUrl = MediaUtil.getAppIcon(APP_ICONS.THINKING_FRIEND);
 
+  /**
+   * String translation should be done in a component
+   * @returns 
+   */
+  function translate(feelings: FeelingDescriptor[]) {
+    var titles: Array<string> = [];
+    for (var i=0; i < feelings.length; i++) {
+      var title = t(feelings[i].titleId, { context: gender });
+      titles.push(title)
+    }
+    return titles;
+  }
+
   return (
     <>
       <div className="app-page"> 
@@ -34,8 +49,8 @@ export const Explore = () => {
                 positive.current.length > 0 &&
                 <div>
                   <div className="positive-color">
-                    כַּמָּה נִפְלָא שֶׁיֵּשׁ זְמַן בּוֹ אַתְּ מַרְגִּישָׁה 
-                    { FeelingsUtil.getTitlesAsString(positive.current) }
+                    { t("wonderfull-you-feel", { context: gender }) } 
+                    { FeelingsUtil.getTitlesAsString(translate(positive.current)) }
                     <div>
                       <img src={happyFriendImageUrl} alt="Happy app friend" height={ DEFAULT_FRIEND_HEIGHT } />
                     </div>
@@ -48,7 +63,7 @@ export const Explore = () => {
                   <Link to="/feelings" className="app-header-m">
                     <div className="margin-top-xl">
                       <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="24px" /> </span>
-                      מַרְגִּישָׁה אַחֶרֶת? הַקְלִיקִי כָּאן
+                      { t("feel-differently", {context: gender}) }
                     </div>
                   </Link>
                 </div>
@@ -56,13 +71,13 @@ export const Explore = () => {
               { 
                 negative.current.length > 0 &&
                 <div className="margin-top-xl negative-color">
-                  מָה נַעֲשֶׂה עִם זֶה שֶׁאַתְּ מַרְגִּישָׁה
-                  { FeelingsUtil.getTitlesAsString(negative.current) }?
+                  { t("what-to-do", {context: gender}) }
+                  { FeelingsUtil.getTitlesAsString(translate(negative.current)) }?
 
-                  <Link to="/resolve" className="negative-color app-header-m">
+                  <Link to="/resolve" className="app-header-m">
                     <div className="margin-top-xl">
                       <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="24px" /> </span>
-                      הַקְלִיקִי כָּאן כְּדֵי שֶׁנַּחְשֹׁב מָה יָכוֹל לַעֲזֹר לְךָ
+                      { t("click-to-think", {context: gender}) }
                     </div>
                   </Link>
 

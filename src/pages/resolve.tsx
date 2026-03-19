@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Card } from "../components/shared/Card/Card";
 import { RemediesCatalogUtil } from "../utils/catalogUtil";
 import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
@@ -9,9 +10,10 @@ import { FeelingsUtil } from "../utils/FeelingsUtil";
 import { DetailsPopup } from "../components/detailsPopup/DetailsPopup";
 import { Link } from "react-router-dom";
 import { MediaUtil } from "../utils/MediaUtils";
+import { FeelingDescriptor } from '../model/globalTypes';
 
 export const Resolve = () => {
-  // const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const { 
     name,
@@ -21,7 +23,7 @@ export const Resolve = () => {
 
   const negativeFeelings = useRef(FeelingsUtil.getNegativeFeelings(selectedFeelingsList));;
 
-  var remedies = RemediesCatalogUtil.getRemedies(GENDER.F);
+  var remedies = RemediesCatalogUtil.getRemedies(gender);
 
   const [selectedRemedyId, setSelectedRemedyId] = useState<string | null>(null);
 
@@ -38,13 +40,26 @@ export const Resolve = () => {
     )
   }
 
+  /**
+   * String translation should be done in a component
+   * @returns 
+   */
+  function translate(feelings: FeelingDescriptor[]) {
+    var titles: Array<string> = [];
+    for (var i=0; i < feelings.length; i++) {
+      var title = t(feelings[i].titleId, { context: gender });
+      titles.push(title)
+    }
+    return titles;
+  }
+
   return (
     <>
       <div className="app-page">
         <Banner />
         <div className="normal-color app-header-xl">
-          הַקְלִיקִי עַל מַשֶּׁהוּ שֶׁיִּגְרֹם לָךְ לְהַרְגִּישׁ פָּחוֹת 
-          { FeelingsUtil.getTitlesAsString(negativeFeelings.current) }?
+          { t("click-for-remedy", {context: gender}) } 
+          { FeelingsUtil.getTitlesAsString(translate(negativeFeelings.current)) }?
         </div>
 
         <div className="grid-layout">
@@ -69,7 +84,7 @@ export const Resolve = () => {
           <Link to="/feelings" className="app-header-m">
             <div className="margin-top-xl margin-bottom-xl">
               <span><img src={ MediaUtil.getAppIcon(APP_ICONS.ARROW_RTL) } alt="" height="16px" /> </span>
-              מַרְגִּישָׁה אַחֶרֶת? הַקְלִיקִי כָּאן
+              { t("feel-differently", {context: gender}) }
             </div>
           </Link>
         </div>

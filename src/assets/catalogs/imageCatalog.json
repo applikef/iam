@@ -27,88 +27,173 @@
       "title": ""
     },
     {
+      "id": "desperate-boy",
+      "url": "resources/imageCatalog/desperate-boy.png",
+      "title": ""
+    },
+    {
       "id": "confused-girl",
-      "url": "resources/imageCatalog/confused-girl.png",
+      "url": "resources/imageCatalog/confused-girl.jpg",
+      "title": ""
+    },
+    {
+      "id": "confused-boy",
+      "url": "resources/imageCatalog/confused-boy.png",
       "title": ""
     },
     {
       "id": "girl-crying",
-      "url": "resources/imageCatalog/girl-crying.png",
+      "url": "resources/imageCatalog/girl-crying.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-crying",
+      "url": "resources/imageCatalog/boy-crying.jpg",
       "title": ""
     },
     {
       "id": "girl-dancing",
-      "url": "resources/imageCatalog/girl-dancing.png",
+      "url": "resources/imageCatalog/girl-dancing.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-dancing",
+      "url": "resources/imageCatalog/boy-dancing.jpg",
       "title": ""
     },
     {
       "id": "girl-draws",
-      "url": "resources/imageCatalog/girl-draws.png",
+      "url": "resources/imageCatalog/girl-draws.jpg",
+      "title": ""
+    },
+    {
+      "id": "drawing",
+      "url": "resources/imageCatalog/drawing.jpg",
       "title": ""
     },
     {
       "id": "girl-drinking",
-      "url": "resources/imageCatalog/girl-drinking.png",
+      "url": "resources/imageCatalog/girl-drinking.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-drinking",
+      "url": "resources/imageCatalog/boy-drinking.jpg",
       "title": ""
     },
     {
       "id": "girl-eating",
-      "url": "resources/imageCatalog/girl-eating.png",
+      "url": "resources/imageCatalog/girl-eating.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-eating",
+      "url": "resources/imageCatalog/boy-eating.jpg",
       "title": ""
     },
     {
       "id": "girl-hugs",
-      "url": "resources/imageCatalog/girl-hugs.png",
+      "url": "resources/imageCatalog/girl-hugs.jpg",
       "title": ""
     },
     {
-      "id": "girl-is-hugged",
-      "url": "resources/imageCatalog/girl-is-hugged.png",
+      "id": "boy-hugs",
+      "url": "resources/imageCatalog/boy-hugs.jpg",
+      "title": ""
+    },
+    {
+      "id": "child-is-hugged",
+      "url": "resources/imageCatalog/child-is-hugged.jpg",
       "title": ""
     },
     {
       "id": "girl-listens-to-music",
-      "url": "resources/imageCatalog/girl-listens-to-music.png",
+      "url": "resources/imageCatalog/girl-listens-to-music.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-listens-to-music",
+      "url": "resources/imageCatalog/boy-listens-to-music.jpg",
       "title": ""
     },
     {
       "id": "girl-lying-with-bear",
-      "url": "resources/imageCatalog/girl-lying-with-bear.png",
+      "url": "resources/imageCatalog/girl-lying-with-bear.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-lying-with-bear",
+      "url": "resources/imageCatalog/boy-lying-with-bear.jpg",
       "title": ""
     },
     {
       "id": "girl-on-the-street",
-      "url": "resources/imageCatalog/girl-on-the-street.png",
+      "url": "resources/imageCatalog/girl-on-the-street.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-outside",
+      "url": "resources/imageCatalog/boy-outside.jpg",
       "title": ""
     },
     {
       "id": "girl-sitting-alone",
-      "url": "resources/imageCatalog/girl-sitting-alone.png",
+      "url": "resources/imageCatalog/girl-sitting-alone.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-sitting-alone",
+      "url": "resources/imageCatalog/boy-sitting-alone.jpg",
       "title": ""
     },
     {
       "id": "girl-talks-to-someone",
-      "url": "resources/imageCatalog/girl-talks-to-friend.png",
+      "url": "resources/imageCatalog/girl-talks-to-friend.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-talks-to-someone",
+      "url": "resources/imageCatalog/talk-to-adult.jpg",
       "title": ""
     },
     {
       "id": "girl-tapping",
-      "url": "resources/imageCatalog/girl-tapping.png",
+      "url": "resources/imageCatalog/girl-tapping.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-tapping",
+      "url": "resources/imageCatalog/boy-tapping.jpg",
       "title": ""
     },
     {
       "id": "girl-watches-tv",
-      "url": "resources/imageCatalog/girl-watches-tv.png",
+      "url": "resources/imageCatalog/watch-tv.jpg",
+      "title": ""
+    },
+    {
+      "id": "boy-watches-tv",
+      "url": "resources/imageCatalog/watch-tv.jpg",
       "title": ""
     },
     {
       "id": "girls-playing",
-      "url": "resources/imageCatalog/girls-playing.png",
+      "url": "resources/imageCatalog/girls-playing.jpg",
+      "title": ""
+    },
+    {
+      "id": "boys-playing",
+      "url": "resources/imageCatalog/boys-playing.jpg",
       "title": ""
     },
     {
       "id": "happy-girl",
       "url": "resources/imageCatalog/happy-girl.jpg",
+      "title": ""
+    },
+    {
+      "id": "happy-boy",
+      "url": "resources/imageCatalog/happy-boy.png",
       "title": ""
     },
     {
@@ -119,6 +204,11 @@
     {
       "id": "nervous-girl",
       "url": "resources/imageCatalog/nervous-girl.png",
+      "title": ""
+    },
+    {
+      "id": "nervous-boy",
+      "url": "resources/imageCatalog/nervous-boy.jpg",
       "title": ""
     },
     {
@@ -145,13 +235,28 @@
       "title": ""
     },
     {
+      "id": "satisfied-boy",
+      "url": "resources/imageCatalog/satisfied-boy.png",
+      "title": ""
+    },
+    {
       "id": "scared-girl",
       "url": "resources/imageCatalog/scared-girl.png",
       "title": ""
     },
     {
+      "id": "scared-boy",
+      "url": "resources/imageCatalog/scared-boy.png",
+      "title": ""
+    },
+    {
       "id": "worried-girl",
       "url": "resources/imageCatalog/worried-girl.png",
+      "title": ""
+    },
+    {
+      "id": "worried-boy",
+      "url": "resources/imageCatalog/worried-boy.png",
       "title": ""
     }
   ]

@@ -40,7 +40,7 @@ export interface GenderSplitType {
 export interface FeelingType {
   id: string;
   polarity: POLARITY;
-  title: GenderSplitType;
+  titleId: string;
   image: GenderSplitType;
 }
 

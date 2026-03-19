@@ -3,34 +3,25 @@
     {
       "id": "protected",
       "polarity": "positive",
-      "title": {
-        "female": "מוּגֶנֶת",
-        "male": "מוּגָן"
-      },
+      "titleId": "protected",
       "image": {
         "female": "protected-girl",
-        "male": ""
+        "male": "protected-girl"
       }
     },
     {
       "id": "happy",
       "polarity": "positive",
-      "title": {
-        "female": "שְׂמֵחָה",
-        "male": "שָׂמֵחַ"
-      },
+      "titleId": "happy",
       "image": {
         "female": "happy-girl",
-        "male": "happy-girl"
+        "male": "happy-boy"
       }
     },
     {
       "id": "calm",
       "polarity": "positive",
-      "title": {
-        "female": "רְגוּעָה",
-        "male": "רָגוּעַ"
-      },
+      "titleId": "calm",
       "image": {
         "female": "calm-girl",
         "male": "calm-boy"
@@ -39,94 +30,70 @@
     {
       "id": "satisfied",
       "polarity": "positive",
-      "title": {
-        "female": "מְרֻצָּה",
-        "male": "מְרֻצֶּה"
-      },
+      "titleId": "satisfied",
       "image": {
         "female": "satisfied-girl",
-        "male": ""
+        "male": "satisfied-boy"
       }
     },
     {
       "id": "confused",
       "polarity": "negative",
-      "title": {
-        "female": "מְבֻלְבֶּלֶת",
-        "male": "מְבֻלְבָּל"
-      },
+      "titleId": "confused",
       "image": {
         "female": "confused-girl",
-        "male": ""
+        "male": "confused-boy"
       }
     },
     {
       "id": "desperate",
       "polarity": "negative",
-      "title": {
-        "female": "מְיֹאֶשֶׁת",
-        "male": "מְיֹאָשׁ"
-      },
+      "titleId": "desperate",
       "image": {
         "female": "desperate-girl",
-        "male": ""
+        "male": "desperate-boy"
       }
     },
     {
       "id": "nervous",
       "polarity": "negative",
-      "title": {
-        "female": "עַצְבָּנִית",
-        "male": "עַצְבָּנִי"
-      },
+      "titleId": "nervous",
       "image": {
         "female": "nervous-girl",
-        "male": ""
+        "male": "nervous-boy"
       }
     },
     {
       "id": "sad",
       "polarity": "negative",
-      "title": {
-        "female": "עֲצוּבָה",
-        "male": "עָצוּב"
-      },
+      "titleId": "sad",
       "image": {
         "female": "sad-female",
-        "male": "sad-child"
+        "male": "sad-male"
       }
     },
     {
       "id": "scared",
       "polarity": "negative",
-      "title": {
-        "female": "מְפֻחֶדֶת",
-        "male": "מְפֻחָד"
-      },
+      "titleId": "scared",
       "image": {
         "female": "scared-girl",
-        "male": ""
+        "male": "scared-boy"
       }
     },
     {
       "id": "worried",
       "polarity": "negative",
-      "title": {
-        "female": "דּוֹאֶגֶת",
-        "male": "דּוֹאֵג"
-      },
+      "titleId": "worried",
       "image": {
         "female": "worried-girl",
-        "male": ""
+        "male": "worried-boy"
       }
     },
     {
       "id": "angry",
       "polarity": "negative",
-      "title": {
-        "female": "כּוֹעֶסֶת",
-        "male": "כּוֹעֵס"
-      },
+      "titleId": "angry",
       "image": {
         "female": "angry-girl",
         "male": "angry-boy"

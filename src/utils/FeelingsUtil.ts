@@ -32,11 +32,11 @@ export class FeelingsUtil {
     return FeelingsUtil.getPolarityMoods(feelingsList, POLARITY.NEGATIVE);
   }
 
-  public static getTitlesAsString(feelings: Array<FeelingDescriptor>): string {
+  public static getTitlesAsString(feelings: Array<string>): string {
     var str: string = "";
     for (var i=0; i < feelings.length; i++) {
       if (feelings.length === 1) {
-        return " " +  feelings[0].title
+        return " " +  feelings[0]
       }
 
       if (i === feelings.length -1) {
@@ -46,7 +46,7 @@ export class FeelingsUtil {
         str += " ";
       }
 
-      str += feelings[i].title;
+      str += feelings[i];
     }
     return str;
   }

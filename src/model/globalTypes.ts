@@ -3,7 +3,7 @@ import { POLARITY } from "../utils/constantsUtil";
 export interface FeelingDescriptor {
   id: string;
   polarity: POLARITY;
-  title: string;
+  titleId: string;
   image: string | undefined;
 }
 

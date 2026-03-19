@@ -52,7 +52,7 @@ export class FeelingsCatalogUtil {
     FeelingsCatalogUtil.feelingList.feelings.forEach(feeling => {
       FeelingDescriptorList.push ({
           id: feeling.id,
-          title: feeling.title[gender],
+          titleId: feeling.titleId,
           polarity: feeling.polarity,
           image: feeling.image !== undefined ? 
             ImageCatalogUtil.getCatalogImage(feeling.image[gender]) 
@@ -70,7 +70,7 @@ export class FeelingsCatalogUtil {
       if (feeling.id === id) {
         return {
           id: feeling.id,
-          title: feeling.title[gender],
+          titleId: feeling.titleId,
           polarity: feeling.polarity,
           image: feeling.image !== undefined ? 
             ImageCatalogUtil.getCatalogImage(feeling.image[gender]) 
