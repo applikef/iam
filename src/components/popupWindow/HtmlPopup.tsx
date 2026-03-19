@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
-import "./DetailsPopup.css";
+import "./PopupWindow.css";
 import AppContext, { AppContextType } from "../../context/AppContextProvider";
 
-export interface DetailsPopupProps {
+export interface HtmlPopupProps {
   onClose: Function;
   baseUrl: string;
   infoId?: string;
   fileName?: string;
 }
 
-export const DetailsPopup = (props: DetailsPopupProps) => {
+export const HtmlPopup = (props: HtmlPopupProps) => {
     const { 
       name,
       gender,

@@ -1,0 +1,16 @@
+@import "./../../assets/styles/global.css";
+
+.details-popup-close {
+  padding-bottom: var(--size-normal);
+  align-self: flex-end;
+}
+
+.text-popup-close {
+  padding-bottom: var(--size-xxs);
+  color: var(--purple-03);
+}
+
+.text-popup {
+  max-width: 400px;
+  text-align: right;
+}

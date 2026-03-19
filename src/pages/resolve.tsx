@@ -1,16 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import { Card } from "../components/shared/Card/Card";
 import { RemediesCatalogUtil } from "../utils/catalogUtil";
-import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_IMAGE_HEIGHT } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useRef, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { FeelingsUtil } from "../utils/FeelingsUtil";
-import { DetailsPopup } from "../components/detailsPopup/DetailsPopup";
+import { HtmlPopup } from "../components/popupWindow/HtmlPopup";
 import { Link } from "react-router-dom";
 import { MediaUtil } from "../utils/MediaUtils";
 import { FeelingDescriptor } from '../model/globalTypes';
+import { TextPopup } from '../components/popupWindow/TextPopup';
 
 export const Resolve = () => {
   const { t } = useTranslation();
@@ -92,7 +93,7 @@ export const Resolve = () => {
 
       { selectedRemedyId !== null &&
         <div className={`info-popup-content ${ switchShow() }`}>
-          <DetailsPopup infoId={selectedRemedyId} baseUrl="remedyDetails" onClose={() => setSelectedRemedyId(null)}/>
+          <TextPopup infoId={selectedRemedyId} onClose={() => setSelectedRemedyId(null)}/>
         </div>
       }
     </>
