@@ -7,7 +7,6 @@ import { useContext, useRef, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
 import AppContext, { AppContextType } from "../context/AppContextProvider";
 import { FeelingsUtil } from "../utils/FeelingsUtil";
-import { HtmlPopup } from "../components/popupWindow/HtmlPopup";
 import { Link } from "react-router-dom";
 import { MediaUtil } from "../utils/MediaUtils";
 import { FeelingDescriptor } from '../model/globalTypes';
@@ -17,7 +16,6 @@ export const Resolve = () => {
   const { t } = useTranslation();
 
   const { 
-    name,
     gender,
     selectedFeelingsList
   } = useContext(AppContext) as AppContextType;

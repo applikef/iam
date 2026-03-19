@@ -17,3 +17,4 @@ export const DEFAULT_IMAGE_HEIGHT = 128
 export const IMAGE_BASE_URL = "/iam/"
 export const HOME_PAGE_PATH = "/"
 export const MOBILE_SCREEN_WIDTH = "600"
+export const MOBILE_HEIGHT_RATIO = 0.75

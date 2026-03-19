@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { Card } from "../components/shared/Card/Card";
 import { FeelingsCatalogUtil } from "../utils/catalogUtil";
-import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER, MOBILE_HEIGHT_RATIO } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";
@@ -16,7 +16,7 @@ export const Feelings = () => {
   const navigate = useNavigate();
 
   const { 
-    name,
+    isMobile,
     gender,
     setSelectedFeelingsList
   } = useContext(AppContext) as AppContextType;
@@ -54,6 +54,8 @@ export const Feelings = () => {
     }
   }
   
+  const imageHeight = isMobile ? DEFAULT_IMAGE_HEIGHT * MOBILE_HEIGHT_RATIO : DEFAULT_IMAGE_HEIGHT;
+  
   return (
     <>
       <div className="app-page">
@@ -85,7 +87,7 @@ export const Feelings = () => {
               <Card key={feeling.id}
                   content={ t(feeling.titleId, { context: gender }).toString() } 
                   media={ feeling.image }
-                  height={ DEFAULT_IMAGE_HEIGHT }
+                  height={ imageHeight }
               />
               </span>
             )
