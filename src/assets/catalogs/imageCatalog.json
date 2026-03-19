@@ -3,12 +3,22 @@
   "images": [
     {
       "id": "angry-boy",
-      "url": "resources/imageCatalog/angry-boy.jpeg",
+      "url": "resources/imageCatalog/angry-boy.jpg",
       "title": ""
     },
     {
       "id": "angry-girl",
-      "url": "resources/imageCatalog/angry-girl.jpeg",
+      "url": "resources/imageCatalog/angry-girl.jpg",
+      "title": ""
+    },
+    {
+      "id": "screaming-boy",
+      "url": "resources/imageCatalog/screaming-boy.jpg",
+      "title": ""
+    },
+    {
+      "id": "screaming-girl",
+      "url": "resources/imageCatalog/screaming-girl.jpg",
       "title": ""
     },
     {
@@ -23,12 +33,12 @@
     },
     {
       "id": "desperate-girl",
-      "url": "resources/imageCatalog/desperate-girl.jpeg",
+      "url": "resources/imageCatalog/desperate-girl.jpg",
       "title": ""
     },
     {
       "id": "desperate-boy",
-      "url": "resources/imageCatalog/desperate-boy.png",
+      "url": "resources/imageCatalog/desperate-boy.jpg",
       "title": ""
     },
     {
@@ -38,7 +48,7 @@
     },
     {
       "id": "confused-boy",
-      "url": "resources/imageCatalog/confused-boy.png",
+      "url": "resources/imageCatalog/confused-boy.jpg",
       "title": ""
     },
     {
@@ -193,7 +203,7 @@
     },
     {
       "id": "happy-boy",
-      "url": "resources/imageCatalog/happy-boy.png",
+      "url": "resources/imageCatalog/happy-boy.jpg",
       "title": ""
     },
     {
@@ -203,7 +213,7 @@
     },
     {
       "id": "nervous-girl",
-      "url": "resources/imageCatalog/nervous-girl.png",
+      "url": "resources/imageCatalog/nervous-girl.jpg",
       "title": ""
     },
     {
@@ -213,12 +223,12 @@
     },
     {
       "id": "protected-girl",
-      "url": "resources/imageCatalog/protected-girl.png",
+      "url": "resources/imageCatalog/protected-girl.jpg",
       "title": ""
     },
     {
       "id": "sad-female",
-      "url": "resources/imageCatalog/sad-female.jpeg",
+      "url": "resources/imageCatalog/sad-female.jpg",
       "title": ""
     },
     {
@@ -231,32 +241,32 @@
     },
     {
       "id": "satisfied-girl",
-      "url": "resources/imageCatalog/satisfied-girl.png",
+      "url": "resources/imageCatalog/satisfied-girl.jpg",
       "title": ""
     },
     {
       "id": "satisfied-boy",
-      "url": "resources/imageCatalog/satisfied-boy.png",
+      "url": "resources/imageCatalog/satisfied-boy.jpg",
       "title": ""
     },
     {
       "id": "scared-girl",
-      "url": "resources/imageCatalog/scared-girl.png",
+      "url": "resources/imageCatalog/scared-girl.jpg",
       "title": ""
     },
     {
       "id": "scared-boy",
-      "url": "resources/imageCatalog/scared-boy.png",
+      "url": "resources/imageCatalog/scared-boy.jpg",
       "title": ""
     },
     {
       "id": "worried-girl",
-      "url": "resources/imageCatalog/worried-girl.png",
+      "url": "resources/imageCatalog/worried-girl.jpg",
       "title": ""
     },
     {
       "id": "worried-boy",
-      "url": "resources/imageCatalog/worried-boy.png",
+      "url": "resources/imageCatalog/worried-boy.jpg",
       "title": ""
     }
   ]
