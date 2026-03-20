@@ -13,7 +13,6 @@ export const Explore = () => {
   const { t } = useTranslation();
 
   const { 
-    name,
     gender,
     selectedFeelingsList,
   } = useContext(AppContext) as AppContextType;

@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { Card } from "../components/shared/Card/Card";
 import { FeelingsCatalogUtil } from "../utils/catalogUtil";
-import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, GENDER, MOBILE_HEIGHT_RATIO } from "../utils/constantsUtil";
+import { APP_ICONS, DEFAULT_IMAGE_HEIGHT, MOBILE_HEIGHT_RATIO } from "../utils/constantsUtil";
 import "./../assets/styles/global.css";
 import { useContext, useState } from "react";
 import { Banner } from "../components/shared/Banner/Banner";

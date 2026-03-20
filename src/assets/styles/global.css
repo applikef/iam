@@ -311,3 +311,8 @@ a {
   left: 110px;
   padding: 16px;
 }
+
+.light-comment {
+  color: var(--gray-05);
+  font-size: var(--size-normal);
+}

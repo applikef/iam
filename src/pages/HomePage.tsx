@@ -11,8 +11,6 @@ import { APP_ICONS, GENDER, MOBILE_SCREEN_WIDTH } from "../utils/constantsUtil";
 export const HomePage = () => {
   const { t } = useTranslation();
   const { 
-    name,
-    setName,
     gender,
     setGender,
     setIsMobile
@@ -61,6 +59,8 @@ export const HomePage = () => {
               width={ isMobile ? "250px" : "550px"}
             />
           </div> 
+          <div className="light-comment">הערות? מחשבות? כתבו לנו</div>
+          <div className="light-comment">ahava.applikef@gmail.com</div>
         </div>
       </div>
     </>
