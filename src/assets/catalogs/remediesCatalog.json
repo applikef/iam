@@ -89,28 +89,6 @@
       }
     },
     {
-      "id": "drum",
-      "title": {
-        "female": "לְתוֹפֵף",
-        "male": "לְתוֹפֵף"
-      },
-      "image": {
-        "female": "girl-tapping",
-        "male": "boy-tapping"
-      }
-    },
-    {
-      "id": "watch-tv",
-      "title": {
-        "female": "לִרְאוֹת טֵלֵוִיזְיָה",
-        "male": "לִרְאוֹת טֵלֵוִיזְיָה"
-      },
-      "image": {
-        "female": "girl-watches-tv",
-        "male": "boy-watches-tv"
-      }
-    },
-    {
       "id": "play-with-friend",
       "title": {
         "female": "לְשַׂחֵק עִם מִישֶׁהוּ",
