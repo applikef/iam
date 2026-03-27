@@ -12,6 +12,17 @@
       }
     },
     {
+      "id": "drum",
+      "title": {
+        "female": "לְתוֹפֵף ",
+        "male": "לְתוֹפֵף "
+      },
+      "image": {
+        "female": "drumming",
+        "male": "drumming"
+      }
+    },
+    {
       "id": "dance",
       "title": {
         "female": "לִרְקֹד ",
