@@ -41,7 +41,7 @@
 
   --purple-03: #53178A;
 
-  --background: var(--gray-01);
+  --background: var(--white-01);
   --text: var(--blue-03);
   --link: var(--blue-03);
   --clickable: var(--purple-03);
